@@ -32,11 +32,11 @@ This workshop is aimed at both Ph.D. students and researchers within life scienc
 
 We can accomodate ~42 participants. Selection criteria include correct entry requirements, motivation to attend the workshop as well as gender and geographical balance. We do accept international applicants, but applicants affiliated to a Swedish institution are prioritized.
 
-Once the registration period concludes, we will review your application and notify you of our decision. If and when accepted, you will have three working days to notify us if you cannot participate and want to decline the acceptance. Failure to do so would imply your inability to attend, and we will proceed accordingly. Once you confirmed, our course administrator will proceed with invoicing.
+Once the registration period concludes, we will review your application and notify you of our decision. If and when accepted, you will have [five working days]{.badge} to notify us if you cannot participate and want to decline the acceptance. Failure to do so would imply your inability to attend, and we will proceed accordingly. Once you confirmed, our course administrator will proceed with invoicing.
 
 ## Fee
 
-The fee for academic participants is [**10000 SEK**]{.badge .badge-primary} subsidized by academic grants. Fee for non-academic participants is **20000 SEK**.
+The fee for academic participants is [10000 SEK]{.badge .badge-primary} subsidized by academic grants. Fee for non-academic participants is **20000 SEK**.
 
 ::: {.callout-warning}
 If you register and are admitted but fail to attend without a valid reason (sickness or urgent family matter), you will still be liable for the entire fee.

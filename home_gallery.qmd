@@ -11,7 +11,7 @@ format:
 
 ## Raukr 2024
 
-![](assets/images/raukr-2024/x.webp){group="raukr-2024"}
+![](assets/images/raukr-2024/o.webp){group="raukr-2024"}
 
 ::: {.raukr-gallery-parent}
 ::: {.raukr-gallery-child}

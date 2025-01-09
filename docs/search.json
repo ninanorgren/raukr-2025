@@ -18,7 +18,7 @@
     "href": "home_registration.html#selection",
     "title": "Registration",
     "section": "Selection",
-    "text": "Selection\nWe can accomodate ~42 participants. Selection criteria include correct entry requirements, motivation to attend the workshop as well as gender and geographical balance. We do accept international applicants, but applicants affiliated to a Swedish institution are prioritized.\nOnce the registration period concludes, we will review your application and notify you of our decision. If and when accepted, you will have three working days to notify us if you cannot participate and want to decline the acceptance. Failure to do so would imply your inability to attend, and we will proceed accordingly. Once you confirmed, our course administrator will proceed with invoicing."
+    "text": "Selection\nWe can accomodate ~42 participants. Selection criteria include correct entry requirements, motivation to attend the workshop as well as gender and geographical balance. We do accept international applicants, but applicants affiliated to a Swedish institution are prioritized.\nOnce the registration period concludes, we will review your application and notify you of our decision. If and when accepted, you will have five working days to notify us if you cannot participate and want to decline the acceptance. Failure to do so would imply your inability to attend, and we will proceed accordingly. Once you confirmed, our course administrator will proceed with invoicing."
   },
   {
     "objectID": "home_registration.html#fee",
@@ -60,7 +60,7 @@
     "href": "home_registration.html#accomodation",
     "title": "Registration",
     "section": "Accomodation",
-    "text": "Accomodation\nParticipants are responsible for arranging their own accommodation. When booking accommodation, we recommend that it is located at a walking/biking distance from Campus Gotland. Here are a few suggestions below where participants have previously stayed at. These are also marked on the map.\n\n\n\n\n\n\n\n\n\n\nName\nAddress\n\n\n\n\nMullbärsgården B&B\nStrandgatan 27, 621 55 Visby, 550 m (8 min walk)\n\n\nVisby Logi & Vandrarhem\nHästgatan 14, 621 56 Visby, 450m (6 min walk)\n\n\nVisby Fängelse\nSkeppsbron 1, 621 57 Visby, 450m (6 min walk)\n\n\nHotell Slottsbacken\nVisborgsgatan 1, 621 57 Visby, 450m (6 min walk)\n\n\nClarion Hotel Visby\nStrandgatan 6, 621 57 Visby, 260m (3 min walk)\n\n\nFirst Hotel Kokoloko\nSöderväg 56 A, 621 58 Visby, 1.7k (25 min walk, 8 min bike)\n\n\nVisby Strandby\nSnäckgärdsvägen 32, 621 55 Visby, 2.3k (31 min walk, 7 min bike)"
+    "text": "Accomodation\nParticipants are responsible for arranging their own accommodation. When booking accommodation, we recommend that it is located at a walking/biking distance from Campus Gotland. Here are a few suggestions below where participants have previously stayed at. These are also marked on the map.\n\n\n\n\n\n\n\n\n\n\nName\nAddress\n\n\n\n\nMullbärsgården B&B\nStrandgatan 27, 621 55 Visby, 550 m (8 min walk)\n\n\nVisby Logi & Vandrarhem\nHästgatan 14, 621 56 Visby, 450m (6 min walk)\n\n\nVisby Fängelse\nSkeppsbron 1, 621 57 Visby, 450m (6 min walk)\n\n\nHotell Slottsbacken\nVisborgsgatan 1, 621 57 Visby, 450m (6 min walk)\n\n\nClarion Hotel Visby\nStrandgatan 6, 621 57 Visby, 260m (3 min walk)\n\n\nFirst Hotel Kokoloko\nSöderväg 56 A, 621 58 Visby, 1.7km (25 min walk, 8 min bike)\n\n\nVisby Strandby\nSnäckgärdsvägen 32, 621 55 Visby, 2.3km (31 min walk, 7 min bike)"
   },
   {
     "objectID": "home_registration.html#meals",
@@ -102,14 +102,14 @@
     "href": "index.html",
     "title": "",
     "section": "",
-    "text": "In Life Sciences and Bioinformatics, the R programming language is pivotal for data transformation, statistical analyses, and crafting publication-ready visualizations. This workshop goes beyond the basics, offering participants a comprehensive understanding of the R ecosystem. We explore best coding practices, code profiling, data wrangling, generating reports from notebooks and development of web apps using R.\n   \n\n\nUpdated: 09-01-2025 at 13:51:42."
+    "text": "In Life Sciences and Bioinformatics, the R programming language is pivotal for data transformation, statistical analyses, and crafting publication-ready visualizations. This workshop goes beyond the basics, offering participants a comprehensive understanding of the R ecosystem. We explore best coding practices, code profiling, data wrangling, generating reports from notebooks and development of web apps using R.\n   \n\n\nUpdated: 09-01-2025 at 15:21:39."
   },
   {
     "objectID": "index.html#raukr-summer-school-2025",
     "href": "index.html#raukr-summer-school-2025",
     "title": "",
     "section": "",
-    "text": "In Life Sciences and Bioinformatics, the R programming language is pivotal for data transformation, statistical analyses, and crafting publication-ready visualizations. This workshop goes beyond the basics, offering participants a comprehensive understanding of the R ecosystem. We explore best coding practices, code profiling, data wrangling, generating reports from notebooks and development of web apps using R.\n   \n\n\nUpdated: 09-01-2025 at 13:51:42."
+    "text": "In Life Sciences and Bioinformatics, the R programming language is pivotal for data transformation, statistical analyses, and crafting publication-ready visualizations. This workshop goes beyond the basics, offering participants a comprehensive understanding of the R ecosystem. We explore best coding practices, code profiling, data wrangling, generating reports from notebooks and development of web apps using R.\n   \n\n\nUpdated: 09-01-2025 at 15:21:39."
   },
   {
     "objectID": "home_about.html",
@@ -144,14 +144,14 @@
     "href": "home_program.html",
     "title": "Program",
     "section": "",
-    "text": "Jennifer Bryan\nSoftware engineer at Posit\nData science professor\nUniversity of British Columbia\nVancouver, Canada\n\n\n\nChristophe Dervieux\nSoftware engineer at Posit\nParis, France\n\n\n\nHenrik Bengtsson\nProject lead for Futureverse\nAssociate professor in Epidemiology & Biostatistics\nUniversity of California\nSan Francisco, USA"
+    "text": "Jennifer Bryan\nSoftware engineer at Posit\nData science professor\nUniversity of British Columbia\nVancouver, Canada\n\n\n\nChristophe DervieuxTo be confirmed\nSoftware engineer at Posit\nParis, France\n\n\n\nHenrik BengtssonTo be confirmed\nProject lead for Futureverse\nAssociate professor in Epidemiology & Biostatistics\nUniversity of California\nSan Francisco, USA"
   },
   {
     "objectID": "home_program.html#guest-instructors",
     "href": "home_program.html#guest-instructors",
     "title": "Program",
     "section": "",
-    "text": "Jennifer Bryan\nSoftware engineer at Posit\nData science professor\nUniversity of British Columbia\nVancouver, Canada\n\n\n\nChristophe Dervieux\nSoftware engineer at Posit\nParis, France\n\n\n\nHenrik Bengtsson\nProject lead for Futureverse\nAssociate professor in Epidemiology & Biostatistics\nUniversity of California\nSan Francisco, USA"
+    "text": "Jennifer Bryan\nSoftware engineer at Posit\nData science professor\nUniversity of British Columbia\nVancouver, Canada\n\n\n\nChristophe DervieuxTo be confirmed\nSoftware engineer at Posit\nParis, France\n\n\n\nHenrik BengtssonTo be confirmed\nProject lead for Futureverse\nAssociate professor in Epidemiology & Biostatistics\nUniversity of California\nSan Francisco, USA"
   },
   {
     "objectID": "home_program.html#syllabus",
