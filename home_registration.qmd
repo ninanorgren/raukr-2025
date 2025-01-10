@@ -36,7 +36,7 @@ Once the registration period concludes, we will review your application and noti
 
 ## Fee
 
-The fee for academic participants is [10000 SEK]{.badge .badge-primary} subsidized by academic grants. Fee for non-academic participants is **20000 SEK**.
+The fee for academic participants is [9500 SEK]{.badge .badge-primary} subsidized by academic grants. Fee for non-academic participants is **19000 SEK**.
 
 ::: {.callout-warning}
 If you register and are admitted but fail to attend without a valid reason (sickness or urgent family matter), you will still be liable for the entire fee.
