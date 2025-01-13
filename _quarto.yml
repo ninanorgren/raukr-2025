@@ -33,6 +33,12 @@ website:
     left: "{{< meta current_year >}} NBIS | [GPL-3 License](https://choosealicense.com/licenses/gpl-3.0/)"
     right: "Published with [Quarto](https://quarto.org/) v{{< meta quarto_version >}}"
   site-url: "https://nbisweden.github.io/raukr-2025/"
+  announcement:
+    icon: info-circle
+    dismissable: true
+    content: "Registration is now open for the RaukR 2025."
+    type: primary
+    position: above-navbar
 
 format:
   html:
