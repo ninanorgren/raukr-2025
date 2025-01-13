@@ -1,5 +1,6 @@
 ---
 title: "About"
+pagetitle: "RaukR 2025 • About"
 toc: false
 date: ""
 sidebar: false

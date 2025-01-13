@@ -1,5 +1,6 @@
 ---
 title: "Contents"
+pagetitle: "RaukR 2025 • Contents"
 description: "Course materials including presentations (slides) and practical exercises (labs)"
 toc: false
 date: ""

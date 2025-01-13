@@ -1,5 +1,5 @@
 ---
-pagetitle: "Raukr 2025"
+pagetitle: "RaukR 2025 • Summer school • R Beyond the Basics"
 subtitle: ""
 toc: false
 date: ""
@@ -18,8 +18,8 @@ execute:
 ::: {.home-grid-parent}
 ::: {.home-grid-child-left}
 
-## [**RaukR** • Summer School 2025]{.large}
-### R Beyond the Basics
+## [**RaukR** • R Beyond the Basics]{.large}
+### Summer School 2025
 :::{style="margin-bottom:1em;"}
 ##### 09-19 June 2025, Visby, Gotland, Sweden
 :::

@@ -1,5 +1,6 @@
 ---
 title: "Registration"
+pagetitle: "RaukR 2025 • Registration"
 date: ""
 sidebar: false
 format:

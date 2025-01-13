@@ -1,5 +1,6 @@
 ---
 title: "Schedule"
+pagetitle: "RaukR 2025 • Schedule"
 date: ""
 format:
   html:

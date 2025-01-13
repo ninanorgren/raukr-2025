@@ -1,5 +1,6 @@
 ---
 title: "Gallery"
+pagetitle: "RaukR 2025 • Gallery"
 description: "Pictures from previous workshops"
 toc: false
 date: ""

@@ -1,5 +1,6 @@
 ---
 title: "Program"
+pagetitle: "RaukR 2025 • Program"
 date: ""
 sidebar: false
 format:
