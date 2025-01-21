@@ -8,7 +8,7 @@ project:
     - "!slides/quarto/sample/*.qmd"
 
 website:
-  image: "assets/images/featured.webp"
+  image: "assets/images/seo.webp"
   favicon: "assets/favicon.svg"
   navbar:
     logo: "assets/logos/raukr.png"
@@ -33,6 +33,7 @@ website:
     left: "{{< meta current_year >}} NBIS | [GPL-3 License](https://choosealicense.com/licenses/gpl-3.0/)"
     right: "Published with [Quarto](https://quarto.org/) v{{< meta quarto_version >}}"
   site-url: "https://nbisweden.github.io/raukr-2025/"
+  open-graph: true
   announcement:
     icon: info-circle
     dismissable: true
