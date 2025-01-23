@@ -16,18 +16,25 @@ website:
     right:
       - text: "Home"
         href: "index.html"
+        aria-label: "Home"
       - text: "Program"
         href: "home_program.html"
+        aria-label: "Program"
       - text: "Registration"
         href: "home_registration.html"
+        aria-label: "Registration"
       - text: Gallery
         href: "home_gallery.html"
+        aria-label: "Gallery"
       - text: FAQ
         href: "home_faq.html"
+        aria-label: "FAQ"
       - text: About
         href: "home_about.html"
+        aria-label: "About"
       - icon: github
         href: https://github.com/NBISweden/raukr-2025
+        aria-label: "GitHub"
   page-footer:
     border: false
     left: "{{< meta current_year >}} NBIS | [GPL-3 License](https://choosealicense.com/licenses/gpl-3.0/)"
@@ -66,7 +73,6 @@ format:
     callout-icon: true
     date:  last-modified
     date-format: "DD-MMM-YYYY"
-    image: "/assets/images/featured.webp"
     lightbox:
       match: auto
   revealjs:
@@ -91,7 +97,6 @@ format:
     fig-align: left
     chalkboard: true
     callout-icon: true
-    image: "/assets/images/featured.webp"
     hero: "/assets/images/hero.webp"
     title-slide-attributes:
       data-background-image: "/assets/images/cover.webp"
@@ -112,7 +117,7 @@ execute:
   echo: true
   warning: false
   message: false
-  freeze: auto
+  freeze: true
 
 knitr:
   opts_chunk:
