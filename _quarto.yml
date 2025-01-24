@@ -8,6 +8,9 @@ project:
     - "!slides/quarto/sample/*.qmd"
 
 website:
+  site-url: "https://nbisweden.github.io/raukr-2025/"
+  open-graph: true
+  description: "A 2 week intensive workshop covering the R ecosystem including best coding practices, code profiling, data wrangling, quarto notebooks, shiny apps and more."
   image: "assets/images/seo.webp"
   favicon: "assets/favicon.svg"
   navbar:
@@ -39,8 +42,6 @@ website:
     border: false
     left: "{{< meta current_year >}} NBIS | [GPL-3 License](https://choosealicense.com/licenses/gpl-3.0/)"
     right: "Published with [Quarto](https://quarto.org/) v{{< meta quarto_version >}}"
-  site-url: "https://nbisweden.github.io/raukr-2025/"
-  open-graph: true
   announcement:
     icon: info-circle
     dismissable: true
