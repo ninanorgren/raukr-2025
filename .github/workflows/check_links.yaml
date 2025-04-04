@@ -13,9 +13,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: gaurav-nelson/github-action-markdown-link-check@v1
-        with:
-          config-file: 'mlc_config.json'
-          use-quiet-mode: 'yes'
-          use-verbose-mode: 'no'
-
+      - name: Link Checker
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
