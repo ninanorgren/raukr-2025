@@ -1,0 +1,21 @@
+# Check that all links are valid, i.e. not broken
+name: Check links
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check_links:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: gaurav-nelson/github-action-markdown-link-check@v1
+        with:
+          config-file: 'mlc_config.json'
+          use-quiet-mode: 'yes'
+          use-verbose-mode: 'no'
+
