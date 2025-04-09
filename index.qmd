@@ -19,7 +19,7 @@ execute:
 ::: {.home-grid-parent}
 ::: {.home-grid-child-left}
 
-## [**RaukR** • R Beyond the Basics]{.large}
+## [RaukR • R Beyond the Basics]{.large}
 ### Summer School 2025
 :::{style="margin-bottom:1em;"}
 ##### 09-19 June 2025, Visby, Gotland, Sweden

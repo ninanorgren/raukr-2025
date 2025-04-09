@@ -2,8 +2,7 @@ project:
   type: website
   output-dir: docs
   render: 
-    - "index.qmd"
-    - "home_*.qmd"
+    - "*.qmd"
     - "*.md"
     - "!slides/quarto/sample/*.qmd"
 
@@ -42,12 +41,12 @@ website:
     border: false
     left: "{{< meta current_year >}} NBIS | [GPL-3 License](https://choosealicense.com/licenses/gpl-3.0/)"
     right: "Published with [Quarto](https://quarto.org/) v{{< meta quarto_version >}}"
-  announcement:
-    icon: info-circle
-    dismissable: true
-    content: "Registration is now open for RaukR 2025."
-    type: primary
-    position: above-navbar
+  # announcement:
+  #   icon: info-circle
+  #   dismissable: true
+  #   content: "Registration is now open for RaukR 2025."
+  #   type: primary
+  #   position: above-navbar
 
 format:
   html:

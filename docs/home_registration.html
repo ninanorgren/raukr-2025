@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.40">
+<meta name="generator" content="quarto-1.4.549">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -36,10 +36,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15accb146438b3070847f28cdead5d0f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-0236d2d5f447ab73a0ecd05fee55d418.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
@@ -82,7 +82,7 @@ background-size: cover;
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Fira+Mono&amp;family=Nunito:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&amp;family=Nunito:ital,wght@0,200..1000;1,200..1000&amp;display=swap" rel="stylesheet">
 <script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
@@ -91,7 +91,7 @@ background-size: cover;
 <script src="site_libs/proj4-2.6.2/proj4.min.js"></script>
 <script src="site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
 <link href="site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
-<script src="site_libs/leaflet-binding-2.2.2/leaflet.js"></script>
+<script src="site_libs/leaflet-binding-2.2.1/leaflet.js"></script>
 <link href="site_libs/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.css" rel="stylesheet">
 <script src="site_libs/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.min.js"></script>
 <link href="site_libs/fontawesome-4.7.0/font-awesome.min.css" rel="stylesheet">
@@ -101,16 +101,13 @@ background-size: cover;
 
 <meta property="og:title" content="RaukR 2025 • Registration">
 <meta property="og:description" content="RaukR 2025 • R Beyond the Basics">
-<meta property="og:image" content="https://nbisweden.github.io/raukr-2025/assets/images/visby.webp">
+<meta property="og:image" content="https://nbisweden.github.io/raukr-2025/assets/images/seo.webp">
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
-    <div id="quarto-announcement" data-announcement-id="0916ec2e57dd3ad7a52f19cf0764faa0" class="alert alert-primary hidden"><i class="bi bi-info-circle quarto-announcement-icon"></i><div class="quarto-announcement-content">
-<p>Registration is now open for RaukR 2025.</p>
-</div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -119,7 +116,7 @@ background-size: cover;
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -155,7 +152,7 @@ background-size: cover;
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+          <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -333,7 +330,7 @@ More info about the fee
 <div class="cell">
 <div class="cell-output-display">
 <div id="leaflet-raukr" style="width:auto;height:450px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="leaflet-raukr">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false}]},{"method":"addAwesomeMarkers","args":[[57.6394006989332,57.6418834618905,57.6386907756162,57.6362356676597,57.6364820625953,57.6386489348324,57.6258703549948,57.6554010828628,57.634235891617,57.6607926854904,57.641785617709],[18.2886166637887,18.2921100503517,18.2951541327037,18.2857956852863,18.2894577665854,18.2909058341587,18.2820583121987,18.3079058678692,18.2812459933587,18.33859496282,18.2960642268324],{"icon":["briefcase","bed","bed","bed","bed","bed","bed","bed","ship","plane","cutlery"],"markerColor":["red","blue","blue","blue","blue","blue","blue","blue","purple","purple","green"],"iconColor":"#FFFFFF","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","prefix":"fa"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["<a target='_blank' href='http://www.campusgotland.uu.se/'>Workshop Venue<\/a><br>Cramérgatan 3<br> 621 57 Visby","<a target='_blank' href='http://www.mullbarsgarden.se/'>Mullbärsgården B&B<\/a><br>Strandgatan 27<br> 621 55 Visby<br> 550 m (8 min walk)","<a target='_blank' href='http://www.visbylogi.se/'>Visby Logi & Vandrarhem<\/a><br>Hästgatan 14<br> 621 56 Visby<br> 450m (6 min walk)","<a target='_blank' href='http://visbyfangelse.se/'>Visby Fängelse<\/a><br>Skeppsbron 1<br> 621 57 Visby<br> 450m (6 min walk)","<a target='_blank' href='http://hotellslottsbacken.se/'>Hotell Slottsbacken<\/a><br>Visborgsgatan 1<br> 621 57 Visby<br> 450m (6 min walk)","<a target='_blank' href='https://www.strawberry.se/hotell/sverige/visby/clarion-hotel-wisby/'>Clarion Hotel Visby<\/a><br>Strandgatan 6<br> 621 57 Visby<br> 260m (3 min walk)","<a target='_blank' href='https://www.firsthotels.se/hotell/sverige/gotland/first-hotel-kokoloko/'>First Hotel Kokoloko<\/a><br>Söderväg 56 A<br> 621 58 Visby<br> 1.7km (25 min walk<br> 8 min bike)","<a target='_blank' href='http://www.visbystrandby.se/'>Visby Strandby<\/a><br>Snäckgärdsvägen 32<br> 621 55 Visby<br> 2.3km (31 min walk<br> 7 min bike)","<a target='_blank' href='http://www.destinationgotland.se/'>Ferry terminal<\/a><br>Färjeleden 14<br> 621 58 Visby","<a target='_blank' href='https://www.swedavia.com/visby/'>Airport<\/a><br>621 41 Visby","<a target='_blank' href='http://www.kapitelhusgarden.se/'>Kapitelhusgården<\/a><br>S:t Drottensgatan 8<br> 621 56 Visby"],null,null,null,["Workshop Venue","Mullbärsgården B&amp;B","Visby Logi &amp; Vandrarhem","Visby Fängelse","Hotell Slottsbacken","Clarion Hotel Visby","First Hotel Kokoloko","Visby Strandby","Ferry terminal","Airport","Kapitelhusgården"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[57.6258703549948,57.6607926854904],"lng":[18.2812459933587,18.33859496282]},"setView":[[57.6394006989332,18.2886166637887],15,[]]},"evals":[],"jsHooks":[]}</script>
+<script type="application/json" data-for="leaflet-raukr">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false}]},{"method":"addAwesomeMarkers","args":[[57.6394006989332,57.6386907756162,57.6362356676597,57.6364820625953,57.6386489348324,57.6258703549948,57.6554010828628,57.634235891617,57.6607926854904,57.641785617709],[18.2886166637887,18.2951541327037,18.2857956852863,18.2894577665854,18.2909058341587,18.2820583121987,18.3079058678692,18.2812459933587,18.33859496282,18.2960642268324],{"icon":["briefcase","bed","bed","bed","bed","bed","bed","ship","plane","cutlery"],"markerColor":["red","blue","blue","blue","blue","blue","blue","purple","purple","green"],"iconColor":"#FFFFFF","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","prefix":"fa"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["<a target='_blank' href='http://www.campusgotland.uu.se/'>Workshop Venue<\/a><br>Cramérgatan 3<br> 621 57 Visby","<a target='_blank' href='http://www.visbylogi.se/'>Visby Logi & Vandrarhem<\/a><br>Hästgatan 14<br> 621 56 Visby<br> 450m (6 min walk)","<a target='_blank' href='http://visbyfangelse.se/'>Visby Fängelse<\/a><br>Skeppsbron 1<br> 621 57 Visby<br> 450m (6 min walk)","<a target='_blank' href='http://hotellslottsbacken.se/'>Hotell Slottsbacken<\/a><br>Visborgsgatan 1<br> 621 57 Visby<br> 450m (6 min walk)","<a target='_blank' href='https://www.strawberryhotels.com/hotels/sweden/visby/clarion-hotel-wisby/'>Clarion Hotel Visby<\/a><br>Strandgatan 6<br> 621 57 Visby<br> 260m (3 min walk)","<a target='_blank' href='https://www.firsthotels.se/hotell/sverige/gotland/first-hotel-kokoloko/'>First Hotel Kokoloko<\/a><br>Söderväg 56 A<br> 621 58 Visby<br> 1.7km (25 min walk<br> 8 min bike)","<a target='_blank' href='http://www.visbystrandby.se/'>Visby Strandby<\/a><br>Snäckgärdsvägen 32<br> 621 55 Visby<br> 2.3km (31 min walk<br> 7 min bike)","<a target='_blank' href='http://www.destinationgotland.se/'>Ferry terminal<\/a><br>Färjeleden 14<br> 621 58 Visby","<a target='_blank' href='https://www.swedavia.com/visby/'>Airport<\/a><br>621 41 Visby","<a target='_blank' href='http://www.kapitelhusgarden.se/'>Kapitelhusgården<\/a><br>S:t Drottensgatan 8<br> 621 56 Visby"],null,null,null,["Workshop Venue","Visby Logi &amp; Vandrarhem","Visby Fängelse","Hotell Slottsbacken","Clarion Hotel Visby","First Hotel Kokoloko","Visby Strandby","Ferry terminal","Airport","Kapitelhusgården"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[57.6258703549948,57.6607926854904],"lng":[18.2812459933587,18.33859496282]},"setView":[[57.6394006989332,18.2886166637887],15,[]]},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p><br></p>
@@ -368,23 +365,23 @@ Note
 <div class="g-col-10">
 <div class="cell">
 <div class="cell-output-display">
-<div id="uskwnsuvfq" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#uskwnsuvfq table {
+<div id="stzmedbpww" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#stzmedbpww table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#uskwnsuvfq thead, #uskwnsuvfq tbody, #uskwnsuvfq tfoot, #uskwnsuvfq tr, #uskwnsuvfq td, #uskwnsuvfq th {
+#stzmedbpww thead, #stzmedbpww tbody, #stzmedbpww tfoot, #stzmedbpww tr, #stzmedbpww td, #stzmedbpww th {
   border-style: none;
 }
 
-#uskwnsuvfq p {
+#stzmedbpww p {
   margin: 0;
   padding: 0;
 }
 
-#uskwnsuvfq .gt_table {
+#stzmedbpww .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -410,12 +407,12 @@ Note
   border-left-color: #D3D3D3;
 }
 
-#uskwnsuvfq .gt_caption {
+#stzmedbpww .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#uskwnsuvfq .gt_title {
+#stzmedbpww .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -427,7 +424,7 @@ Note
   border-bottom-width: 0;
 }
 
-#uskwnsuvfq .gt_subtitle {
+#stzmedbpww .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -439,7 +436,7 @@ Note
   border-top-width: 0;
 }
 
-#uskwnsuvfq .gt_heading {
+#stzmedbpww .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -451,13 +448,13 @@ Note
   border-right-color: #D3D3D3;
 }
 
-#uskwnsuvfq .gt_bottom_border {
+#stzmedbpww .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#uskwnsuvfq .gt_col_headings {
+#stzmedbpww .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -472,7 +469,7 @@ Note
   border-right-color: #D3D3D3;
 }
 
-#uskwnsuvfq .gt_col_heading {
+#stzmedbpww .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -492,7 +489,7 @@ Note
   overflow-x: hidden;
 }
 
-#uskwnsuvfq .gt_column_spanner_outer {
+#stzmedbpww .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -504,15 +501,15 @@ Note
   padding-right: 4px;
 }
 
-#uskwnsuvfq .gt_column_spanner_outer:first-child {
+#stzmedbpww .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#uskwnsuvfq .gt_column_spanner_outer:last-child {
+#stzmedbpww .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#uskwnsuvfq .gt_column_spanner {
+#stzmedbpww .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -524,11 +521,11 @@ Note
   width: 100%;
 }
 
-#uskwnsuvfq .gt_spanner_row {
+#stzmedbpww .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#uskwnsuvfq .gt_group_heading {
+#stzmedbpww .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -554,7 +551,7 @@ Note
   text-align: left;
 }
 
-#uskwnsuvfq .gt_empty_group_heading {
+#stzmedbpww .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -569,15 +566,15 @@ Note
   vertical-align: middle;
 }
 
-#uskwnsuvfq .gt_from_md > :first-child {
+#stzmedbpww .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#uskwnsuvfq .gt_from_md > :last-child {
+#stzmedbpww .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#uskwnsuvfq .gt_row {
+#stzmedbpww .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -596,7 +593,7 @@ Note
   overflow-x: hidden;
 }
 
-#uskwnsuvfq .gt_stub {
+#stzmedbpww .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -609,7 +606,7 @@ Note
   padding-right: 5px;
 }
 
-#uskwnsuvfq .gt_stub_row_group {
+#stzmedbpww .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -623,15 +620,15 @@ Note
   vertical-align: top;
 }
 
-#uskwnsuvfq .gt_row_group_first td {
+#stzmedbpww .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#uskwnsuvfq .gt_row_group_first th {
+#stzmedbpww .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#uskwnsuvfq .gt_summary_row {
+#stzmedbpww .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -641,16 +638,16 @@ Note
   padding-right: 5px;
 }
 
-#uskwnsuvfq .gt_first_summary_row {
+#stzmedbpww .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#uskwnsuvfq .gt_first_summary_row.thick {
+#stzmedbpww .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#uskwnsuvfq .gt_last_summary_row {
+#stzmedbpww .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -660,7 +657,7 @@ Note
   border-bottom-color: #D3D3D3;
 }
 
-#uskwnsuvfq .gt_grand_summary_row {
+#stzmedbpww .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -670,7 +667,7 @@ Note
   padding-right: 5px;
 }
 
-#uskwnsuvfq .gt_first_grand_summary_row {
+#stzmedbpww .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -680,7 +677,7 @@ Note
   border-top-color: #D3D3D3;
 }
 
-#uskwnsuvfq .gt_last_grand_summary_row_top {
+#stzmedbpww .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -690,11 +687,11 @@ Note
   border-bottom-color: #D3D3D3;
 }
 
-#uskwnsuvfq .gt_striped {
+#stzmedbpww .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#uskwnsuvfq .gt_table_body {
+#stzmedbpww .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -703,7 +700,7 @@ Note
   border-bottom-color: #D3D3D3;
 }
 
-#uskwnsuvfq .gt_footnotes {
+#stzmedbpww .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -717,7 +714,7 @@ Note
   border-right-color: #D3D3D3;
 }
 
-#uskwnsuvfq .gt_footnote {
+#stzmedbpww .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -726,7 +723,7 @@ Note
   padding-right: 5px;
 }
 
-#uskwnsuvfq .gt_sourcenotes {
+#stzmedbpww .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -740,7 +737,7 @@ Note
   border-right-color: #D3D3D3;
 }
 
-#uskwnsuvfq .gt_sourcenote {
+#stzmedbpww .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -748,110 +745,97 @@ Note
   padding-right: 5px;
 }
 
-#uskwnsuvfq .gt_left {
+#stzmedbpww .gt_left {
   text-align: left;
 }
 
-#uskwnsuvfq .gt_center {
+#stzmedbpww .gt_center {
   text-align: center;
 }
 
-#uskwnsuvfq .gt_right {
+#stzmedbpww .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#uskwnsuvfq .gt_font_normal {
+#stzmedbpww .gt_font_normal {
   font-weight: normal;
 }
 
-#uskwnsuvfq .gt_font_bold {
+#stzmedbpww .gt_font_bold {
   font-weight: bold;
 }
 
-#uskwnsuvfq .gt_font_italic {
+#stzmedbpww .gt_font_italic {
   font-style: italic;
 }
 
-#uskwnsuvfq .gt_super {
+#stzmedbpww .gt_super {
   font-size: 65%;
 }
 
-#uskwnsuvfq .gt_footnote_marks {
+#stzmedbpww .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#uskwnsuvfq .gt_asterisk {
+#stzmedbpww .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#uskwnsuvfq .gt_indent_1 {
+#stzmedbpww .gt_indent_1 {
   text-indent: 5px;
 }
 
-#uskwnsuvfq .gt_indent_2 {
+#stzmedbpww .gt_indent_2 {
   text-indent: 10px;
 }
 
-#uskwnsuvfq .gt_indent_3 {
+#stzmedbpww .gt_indent_3 {
   text-indent: 15px;
 }
 
-#uskwnsuvfq .gt_indent_4 {
+#stzmedbpww .gt_indent_4 {
   text-indent: 20px;
 }
 
-#uskwnsuvfq .gt_indent_5 {
+#stzmedbpww .gt_indent_5 {
   text-indent: 25px;
-}
-
-#uskwnsuvfq .katex-display {
-  display: inline-flex !important;
-  margin-bottom: 0.75em !important;
-}
-
-#uskwnsuvfq div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
-  height: 0px !important;
 }
 </style>
 
-<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <thead>
-<tr class="gt_col_headings header">
+<tr class="header gt_col_headings">
 <th id="Name" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">Name</th>
 <th id="Address" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">Address</th>
 </tr>
 </thead>
 <tbody class="gt_table_body">
 <tr class="odd">
-<td class="gt_row gt_left" headers="Name"><a target="_blank" href="http://www.mullbarsgarden.se/">Mullbärsgården B&amp;B</a></td>
-<td class="gt_row gt_left" headers="Address">Strandgatan 27, 621 55 Visby, 550 m (8 min walk)</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="Name"><a target="_blank" href="http://www.visbylogi.se/">Visby Logi &amp; Vandrarhem</a></td>
+<td class="gt_row gt_left" headers="Name"><p><a target="_blank" href="http://www.visbylogi.se/">Visby Logi &amp; Vandrarhem</a></p></td>
 <td class="gt_row gt_left" headers="Address">Hästgatan 14, 621 56 Visby, 450m (6 min walk)</td>
 </tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="Name"><a target="_blank" href="http://visbyfangelse.se/">Visby Fängelse</a></td>
+<tr class="even">
+<td class="gt_row gt_left" headers="Name"><p><a target="_blank" href="http://visbyfangelse.se/">Visby Fängelse</a></p></td>
 <td class="gt_row gt_left" headers="Address">Skeppsbron 1, 621 57 Visby, 450m (6 min walk)</td>
 </tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="Name"><a target="_blank" href="http://hotellslottsbacken.se/">Hotell Slottsbacken</a></td>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Name"><p><a target="_blank" href="http://hotellslottsbacken.se/">Hotell Slottsbacken</a></p></td>
 <td class="gt_row gt_left" headers="Address">Visborgsgatan 1, 621 57 Visby, 450m (6 min walk)</td>
 </tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="Name"><a target="_blank" href="https://www.strawberry.se/hotell/sverige/visby/clarion-hotel-wisby/">Clarion Hotel Visby</a></td>
+<tr class="even">
+<td class="gt_row gt_left" headers="Name"><p><a target="_blank" href="https://www.strawberryhotels.com/hotels/sweden/visby/clarion-hotel-wisby/">Clarion Hotel Visby</a></p></td>
 <td class="gt_row gt_left" headers="Address">Strandgatan 6, 621 57 Visby, 260m (3 min walk)</td>
 </tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="Name"><a target="_blank" href="https://www.firsthotels.se/hotell/sverige/gotland/first-hotel-kokoloko/">First Hotel Kokoloko</a></td>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Name"><p><a target="_blank" href="https://www.firsthotels.se/hotell/sverige/gotland/first-hotel-kokoloko/">First Hotel Kokoloko</a></p></td>
 <td class="gt_row gt_left" headers="Address">Söderväg 56 A, 621 58 Visby, 1.7km (25 min walk, 8 min bike)</td>
 </tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="Name"><a target="_blank" href="http://www.visbystrandby.se/">Visby Strandby</a></td>
+<tr class="even">
+<td class="gt_row gt_left" headers="Name"><p><a target="_blank" href="http://www.visbystrandby.se/">Visby Strandby</a></p></td>
 <td class="gt_row gt_left" headers="Address">Snäckgärdsvägen 32, 621 55 Visby, 2.3km (31 min walk, 7 min bike)</td>
 </tr>
 </tbody>
@@ -873,23 +857,23 @@ Note
 <div class="g-col-10">
 <div class="cell">
 <div class="cell-output-display">
-<div id="koxpctppul" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#koxpctppul table {
+<div id="jvvrmmgcoh" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#jvvrmmgcoh table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#koxpctppul thead, #koxpctppul tbody, #koxpctppul tfoot, #koxpctppul tr, #koxpctppul td, #koxpctppul th {
+#jvvrmmgcoh thead, #jvvrmmgcoh tbody, #jvvrmmgcoh tfoot, #jvvrmmgcoh tr, #jvvrmmgcoh td, #jvvrmmgcoh th {
   border-style: none;
 }
 
-#koxpctppul p {
+#jvvrmmgcoh p {
   margin: 0;
   padding: 0;
 }
 
-#koxpctppul .gt_table {
+#jvvrmmgcoh .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -915,12 +899,12 @@ Note
   border-left-color: #D3D3D3;
 }
 
-#koxpctppul .gt_caption {
+#jvvrmmgcoh .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#koxpctppul .gt_title {
+#jvvrmmgcoh .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -932,7 +916,7 @@ Note
   border-bottom-width: 0;
 }
 
-#koxpctppul .gt_subtitle {
+#jvvrmmgcoh .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -944,7 +928,7 @@ Note
   border-top-width: 0;
 }
 
-#koxpctppul .gt_heading {
+#jvvrmmgcoh .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -956,13 +940,13 @@ Note
   border-right-color: #D3D3D3;
 }
 
-#koxpctppul .gt_bottom_border {
+#jvvrmmgcoh .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#koxpctppul .gt_col_headings {
+#jvvrmmgcoh .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -977,7 +961,7 @@ Note
   border-right-color: #D3D3D3;
 }
 
-#koxpctppul .gt_col_heading {
+#jvvrmmgcoh .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -997,7 +981,7 @@ Note
   overflow-x: hidden;
 }
 
-#koxpctppul .gt_column_spanner_outer {
+#jvvrmmgcoh .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1009,15 +993,15 @@ Note
   padding-right: 4px;
 }
 
-#koxpctppul .gt_column_spanner_outer:first-child {
+#jvvrmmgcoh .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#koxpctppul .gt_column_spanner_outer:last-child {
+#jvvrmmgcoh .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#koxpctppul .gt_column_spanner {
+#jvvrmmgcoh .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1029,11 +1013,11 @@ Note
   width: 100%;
 }
 
-#koxpctppul .gt_spanner_row {
+#jvvrmmgcoh .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#koxpctppul .gt_group_heading {
+#jvvrmmgcoh .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1059,7 +1043,7 @@ Note
   text-align: left;
 }
 
-#koxpctppul .gt_empty_group_heading {
+#jvvrmmgcoh .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1074,15 +1058,15 @@ Note
   vertical-align: middle;
 }
 
-#koxpctppul .gt_from_md > :first-child {
+#jvvrmmgcoh .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#koxpctppul .gt_from_md > :last-child {
+#jvvrmmgcoh .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#koxpctppul .gt_row {
+#jvvrmmgcoh .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1101,7 +1085,7 @@ Note
   overflow-x: hidden;
 }
 
-#koxpctppul .gt_stub {
+#jvvrmmgcoh .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1114,7 +1098,7 @@ Note
   padding-right: 5px;
 }
 
-#koxpctppul .gt_stub_row_group {
+#jvvrmmgcoh .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1128,15 +1112,15 @@ Note
   vertical-align: top;
 }
 
-#koxpctppul .gt_row_group_first td {
+#jvvrmmgcoh .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#koxpctppul .gt_row_group_first th {
+#jvvrmmgcoh .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#koxpctppul .gt_summary_row {
+#jvvrmmgcoh .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1146,16 +1130,16 @@ Note
   padding-right: 5px;
 }
 
-#koxpctppul .gt_first_summary_row {
+#jvvrmmgcoh .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#koxpctppul .gt_first_summary_row.thick {
+#jvvrmmgcoh .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#koxpctppul .gt_last_summary_row {
+#jvvrmmgcoh .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1165,7 +1149,7 @@ Note
   border-bottom-color: #D3D3D3;
 }
 
-#koxpctppul .gt_grand_summary_row {
+#jvvrmmgcoh .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1175,7 +1159,7 @@ Note
   padding-right: 5px;
 }
 
-#koxpctppul .gt_first_grand_summary_row {
+#jvvrmmgcoh .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1185,7 +1169,7 @@ Note
   border-top-color: #D3D3D3;
 }
 
-#koxpctppul .gt_last_grand_summary_row_top {
+#jvvrmmgcoh .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1195,11 +1179,11 @@ Note
   border-bottom-color: #D3D3D3;
 }
 
-#koxpctppul .gt_striped {
+#jvvrmmgcoh .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#koxpctppul .gt_table_body {
+#jvvrmmgcoh .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1208,7 +1192,7 @@ Note
   border-bottom-color: #D3D3D3;
 }
 
-#koxpctppul .gt_footnotes {
+#jvvrmmgcoh .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1222,7 +1206,7 @@ Note
   border-right-color: #D3D3D3;
 }
 
-#koxpctppul .gt_footnote {
+#jvvrmmgcoh .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1231,7 +1215,7 @@ Note
   padding-right: 5px;
 }
 
-#koxpctppul .gt_sourcenotes {
+#jvvrmmgcoh .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1245,7 +1229,7 @@ Note
   border-right-color: #D3D3D3;
 }
 
-#koxpctppul .gt_sourcenote {
+#jvvrmmgcoh .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1253,102 +1237,93 @@ Note
   padding-right: 5px;
 }
 
-#koxpctppul .gt_left {
+#jvvrmmgcoh .gt_left {
   text-align: left;
 }
 
-#koxpctppul .gt_center {
+#jvvrmmgcoh .gt_center {
   text-align: center;
 }
 
-#koxpctppul .gt_right {
+#jvvrmmgcoh .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#koxpctppul .gt_font_normal {
+#jvvrmmgcoh .gt_font_normal {
   font-weight: normal;
 }
 
-#koxpctppul .gt_font_bold {
+#jvvrmmgcoh .gt_font_bold {
   font-weight: bold;
 }
 
-#koxpctppul .gt_font_italic {
+#jvvrmmgcoh .gt_font_italic {
   font-style: italic;
 }
 
-#koxpctppul .gt_super {
+#jvvrmmgcoh .gt_super {
   font-size: 65%;
 }
 
-#koxpctppul .gt_footnote_marks {
+#jvvrmmgcoh .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#koxpctppul .gt_asterisk {
+#jvvrmmgcoh .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#koxpctppul .gt_indent_1 {
+#jvvrmmgcoh .gt_indent_1 {
   text-indent: 5px;
 }
 
-#koxpctppul .gt_indent_2 {
+#jvvrmmgcoh .gt_indent_2 {
   text-indent: 10px;
 }
 
-#koxpctppul .gt_indent_3 {
+#jvvrmmgcoh .gt_indent_3 {
   text-indent: 15px;
 }
 
-#koxpctppul .gt_indent_4 {
+#jvvrmmgcoh .gt_indent_4 {
   text-indent: 20px;
 }
 
-#koxpctppul .gt_indent_5 {
+#jvvrmmgcoh .gt_indent_5 {
   text-indent: 25px;
-}
-
-#koxpctppul .katex-display {
-  display: inline-flex !important;
-  margin-bottom: 0.75em !important;
-}
-
-#koxpctppul div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
-  height: 0px !important;
 }
 </style>
 
-<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <thead>
-<tr class="gt_col_headings header">
+<tr class="header gt_col_headings">
 <th id="Date" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">Date</th>
 <th id="Milestone" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="font-weight: bold" scope="col">Milestone</th>
 </tr>
 </thead>
 <tbody class="gt_table_body">
 <tr class="odd">
-<td class="gt_row gt_left" headers="Date">13-Jan-2025</td>
+<td class="gt_row gt_left" headers="Date"><p>13-Jan-2025</p></td>
 <td class="gt_row gt_left" headers="Milestone">Application opens</td>
 </tr>
 <tr class="even">
-<td class="gt_row gt_left" headers="Date"><strong>06-Apr-2025 23:59</strong></td>
+<td class="gt_row gt_left" headers="Date"><p><strong>06-Apr-2025 23:59</strong></p></td>
 <td class="gt_row gt_left" headers="Milestone">Application deadline</td>
 </tr>
 <tr class="odd">
-<td class="gt_row gt_left" headers="Date">08-Jun-2025</td>
+<td class="gt_row gt_left" headers="Date"><p>08-Jun-2025</p></td>
 <td class="gt_row gt_left" headers="Milestone">Arrival to Visby, mingle in the evening</td>
 </tr>
 <tr class="even">
-<td class="gt_row gt_left" headers="Date">09-Jun-2025 - 19-Jun-2025</td>
+<td class="gt_row gt_left" headers="Date"><p>09-Jun-2025 - 19-Jun-2025</p></td>
 <td class="gt_row gt_left" headers="Milestone">Workshop</td>
 </tr>
 <tr class="odd">
-<td class="gt_row gt_left" headers="Date">19-Jun-2025</td>
+<td class="gt_row gt_left" headers="Date"><p>19-Jun-2025</p></td>
 <td class="gt_row gt_left" headers="Milestone">Project presentations, certificates issued, lunch included</td>
 </tr>
 </tbody>
@@ -1362,8 +1337,12 @@ Note
 </section>
 <section id="register" class="level2">
 <h2 class="anchored" data-anchor-id="register">Register</h2>
-<p>Before proceeding, please ensure you have read all the information on this page as well as our <a href="home_faq.html">FAQs</a>. Click below to access the online registration form.</p>
-<p><span class="btn btn-primary large"><a href="https://nbis.typeform.com/to/zZ87A6Tg"><strong>Registration Form</strong></a> <i class="fa-solid fa-arrow-up-right-from-square" aria-label="arrow-up-right-from-square"></i></span></p>
+<p>Registration is now closed.</p>
+<!--
+Before proceeding, please ensure you have read all the information on this page as well as our [FAQs](home_faq.html). Click below to access the online registration form.
+
+[[**Registration Form**](https://nbis.typeform.com/to/zZ87A6Tg) ]{.btn .btn-primary .large}
+-->
 
 
 </section>
@@ -1404,7 +1383,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const onCopySuccess = function(e) {
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -1436,45 +1426,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
   });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/nbisweden\.github\.io\/raukr-2025\/");
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -1509,11 +1461,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
+      return note.innerHTML;
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
@@ -1561,6 +1509,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
+      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -1796,42 +1745,35 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>Published with <a href="https://quarto.org/">Quarto</a> v1.6.40
+<p>Published with <a href="https://quarto.org/">Quarto</a> v1.4.549
 </p>
 </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
-(function() {
-  let previousOnload = window.onload;
-  window.onload = () => {
-    if (previousOnload) {
-      previousOnload();
-    }
-    lightboxQuarto.on('slide_before_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      const href = trigger.getAttribute('href');
-      if (href !== null) {
-        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-        if (imgEl !== null) {
-          const srcAttr = imgEl.getAttribute("src");
-          if (srcAttr && srcAttr.startsWith("data:")) {
-            slideConfig.href = srcAttr;
-          }
+<script>var lightboxQuarto = GLightbox({"loop":false,"selector":".lightbox","descPosition":"bottom","closeEffect":"zoom","openEffect":"zoom"});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
         }
-      } 
-    });
-  
-    lightboxQuarto.on('slide_after_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(slideNode);
       }
-    });
-  
-  };
-  
-})();
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
           </script>
 
 

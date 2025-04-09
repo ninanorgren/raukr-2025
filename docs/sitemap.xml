@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://nbisweden.github.io/raukr-2025/home_registration.html</loc>
-    <lastmod>2025-01-13T22:27:35.010Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nbisweden.github.io/raukr-2025/home_gallery.html</loc>
-    <lastmod>2025-01-13T22:27:13.619Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nbisweden.github.io/raukr-2025/home_contents.html</loc>
-    <lastmod>2025-01-13T22:26:55.690Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nbisweden.github.io/raukr-2025/index.html</loc>
-    <lastmod>2025-01-23T22:53:03.452Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nbisweden.github.io/raukr-2025/home_about.html</loc>
-    <lastmod>2025-01-13T22:26:46.405Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nbisweden.github.io/raukr-2025/home_faq.html</loc>
-    <lastmod>2025-01-13T22:27:04.786Z</lastmod>
+    <loc>https://nbisweden.github.io/raukr-2025/home_schedule.html</loc>
+    <lastmod>2025-03-19T16:10:51.505Z</lastmod>
   </url>
   <url>
     <loc>https://nbisweden.github.io/raukr-2025/home_program.html</loc>
     <lastmod>2025-01-13T22:27:24.689Z</lastmod>
   </url>
   <url>
-    <loc>https://nbisweden.github.io/raukr-2025/home_schedule.html</loc>
-    <lastmod>2025-01-13T22:27:44.968Z</lastmod>
+    <loc>https://nbisweden.github.io/raukr-2025/home_faq.html</loc>
+    <lastmod>2025-01-13T22:27:04.786Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nbisweden.github.io/raukr-2025/home_about.html</loc>
+    <lastmod>2025-01-13T22:26:46.405Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nbisweden.github.io/raukr-2025/home_contents.html</loc>
+    <lastmod>2025-01-13T22:26:55.690Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nbisweden.github.io/raukr-2025/home_gallery.html</loc>
+    <lastmod>2025-01-13T22:27:13.619Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nbisweden.github.io/raukr-2025/home_registration.html</loc>
+    <lastmod>2025-04-04T13:19:14.482Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nbisweden.github.io/raukr-2025/index.html</loc>
+    <lastmod>2025-04-04T13:24:01.059Z</lastmod>
   </url>
 </urlset>
