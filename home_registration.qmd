@@ -230,6 +230,10 @@ tibble::tribble(
 
 ## Register
 
+Registration is now closed.
+
+<!--
 Before proceeding, please ensure you have read all the information on this page as well as our [FAQs](home_faq.html). Click below to access the online registration form.
 
 [[**Registration Form**](https://nbis.typeform.com/to/zZ87A6Tg) {{< fa arrow-up-right-from-square >}}]{.btn .btn-primary .large}
+-->
