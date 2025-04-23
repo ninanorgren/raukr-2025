@@ -5,7 +5,6 @@ LABEL Description="RaukR Ubuntu environment with R, Rstudio, Conda, Mamba and Qu
 LABEL org.opencontainers.image.authors="roy.francis@nbis.se"
 LABEL org.opencontainers.image.source="https://github.com/nbisweden/raukr-2025"
 
-ARG NCPUS=${NCPUS:--1}
 ARG quarto_version="1.6.42"
 
 RUN apt-get update \
@@ -27,7 +26,7 @@ RUN apt-get update \
 COPY install_r_pkgs.r /scripts/
 COPY renv.lock /scripts
 RUN Rscript --verbose -e 'install.packages(c("BiocManager", "dplyr", "jsonlite", "purrr", "renv", "tibble", "tidyr", "rlang", "remotes", "knitr", "rmarkdown"), repos = "https://packagemanager.rstudio.com/all/latest", verbose = TRUE); remotes::install_github("royfrancis/renvtools", upgrade = "never", verbose = TRUE); remotes::install_github("posit-dev/r-shinylive", upgrade = "never", verbose = TRUE)'
-RUN Rscript --verbose -e "setwd('/scripts'); source('/scripts/install_r_pkgs.r'); install_from_renv_lock(update = TRUE)" \
+RUN Rscript --verbose -e "setwd('/scripts'); source('/scripts/install_r_pkgs.r');" \
     && rm -rf /tmp/downloaded_packages/ /tmp/*.rds \
     && Rscript -e 'webshot::install_phantomjs()'
 
