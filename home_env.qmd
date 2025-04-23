@@ -1,0 +1,112 @@
+---
+title: Environment
+author: Roy Francis
+description: Details of the environment and tools used in the workshop
+format: 
+  html:
+    code-fold: true
+---
+
+## System
+
+### APT packages
+
+<details>
+  <summary>Click here</summary>
+
+```{bash}
+apt list --installed
+```
+
+</details>
+
+### Environment variables
+
+```{bash}
+printenv
+```
+
+## Conda
+
+List of conda environments. The **raukr** environment is the main environment used for the workshop.
+
+```{bash}
+/home/rstudio/miniconda3/bin/conda env list
+```
+
+```{r}
+library(jsonlite)
+library(DT)
+
+#' Get Conda packages as R dataframe
+#' @param env_name Name of the conda environment
+#' @return Dataframe of installed Conda packages
+#'
+get_conda_pkgs <- function(env_name = NULL) {
+  tryCatch(
+    {
+      if (is.null(env_name)) {
+        stop("Please provide a conda environment name.")
+      }
+
+      cmd_args <- c("list", "-n", env_name, "--json")
+      conda_output <- system2("/home/rstudio/miniconda3/bin/conda",
+        args = cmd_args,
+        stdout = TRUE,
+        stderr = TRUE
+      )
+
+      if (length(conda_output) == 0) {
+        stop("No output captured. Please check if the Conda environment exists and Conda is properly installed.")
+      }
+
+      json_string <- paste(conda_output, collapse = "\n")
+      dfr <- fromJSON(json_string)
+      return(dfr[, c("name", "version", "platform", "channel")])
+    },
+    error = function(e) {
+      return(NULL)
+    }
+  )
+}
+```
+
+```{r}
+#| label: tbl-conda-packages-raukr-reticulate
+#| tbl-cap: List of conda packages in the **raukr-reticulate** conda environment.
+DT::datatable(get_conda_pkgs("raukr-reticulate"), options = list(pageLength = 10))
+```
+
+```{r}
+#| label: tbl-conda-packages-raukr-keras
+#| tbl-cap: List of conda packages in the **raukr-keras** conda environment.
+DT::datatable(get_conda_pkgs("raukr-keras"), options = list(pageLength = 10))
+```
+
+## R environment
+
+### Packages
+
+Total number of R packages: `r nrow(installed.packages())`.
+
+```{r}
+#| label: tbl-r-packages
+#| tbl-cap: List of installed R packages.
+library(DT)
+dfr <- installed.packages()[, c("Package", "Version")]
+rownames(dfr) <- NULL
+DT::datatable(dfr)
+```
+
+### Session
+
+<details>
+  <summary>Click here</summary>
+
+```{r}
+#| label: session
+
+sessionInfo()
+```
+
+</details>
