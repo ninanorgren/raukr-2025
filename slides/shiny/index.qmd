@@ -5,6 +5,7 @@ image: "assets/featured.webp"
 format:
   revealjs:
     css: "assets/styles.css"
+    embed-resources: false
 filters:
   - shinylive
 ---

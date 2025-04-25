@@ -1198,7 +1198,7 @@ plotly::ggplotly(p1,width=500,height=400)
 ::: {.column width="50%"}
 
 ```{r}
-#| fig-height: 4
+#| fig-height: 3.5
 #| fig-width: 4.5
 p2 <- p+ggiraph::geom_point_interactive(
   aes(tooltip=paste0("<b>Species: </b>",Species)))+

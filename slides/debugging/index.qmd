@@ -25,7 +25,7 @@ library(emo)
 
 ## Run Forrest, run!
 
-::: {.columns}
+:::: {.columns}
 ::: {.column width="50%"}
 
 <br><br><br>
@@ -43,7 +43,7 @@ library(emo)
 <img src="assets/resources.jpg" style="width:80%;"/>
 
 :::
-::: 
+::::
 
 ## Types of bugs {background-image="assets/featured.webp"}
 
@@ -88,11 +88,13 @@ IMHO those are the hardest `r emo::ji('skull')` to debug!
 <br><br><br>
 
 ::: {.incremental}
+
 - Encapsulate your code in smaller units `r emo::ji('bento_box')` (functions), you can test.<br><br>
 - Use classes and type checking `r emo::ji('ok')`.<br><br>
 - Test `r emo::ji('test_tube')` at the boundaries, e.g. loops at min and max value.<br><br>
 - Feed your functions with test data `r emo::ji('floppy_disk')` that should result with a known output.<br><br>
 - Use *antibugging* `r emo::ji('spider_web')`: `stopifnot(y <= 75)`
+
 :::
 
 ## Floating confusion
@@ -190,7 +192,7 @@ for (val in input) {
 
 . . .
 
-::: {.columns}
+:::: {.columns}
 ::: {.column width="30%"}
 
 <img src = "assets/ui_ux_error.jpg" style="width: 100%"/>
@@ -201,7 +203,7 @@ for (val in input) {
 <br><br><br><br>So, how to handle this mess?
 
 :::
-:::
+::::
 
 ## Handling Errors -- `try`
 <br><br>
@@ -263,10 +265,12 @@ for (val in input) {
 ## Debugging -- errors and warnings
 
 ::: {.incremental}
+
 - An error in your code will result in a call to the `stop()` function that:
   - Breaks the execution of the program (loop, if-statement, etc.)
   - Performs the action defined by the global parameter `error`.
 - A warning just prints out the warning message (or reports it in another way)
+
 :::
 
 . . .
@@ -532,13 +536,13 @@ We can also do a bit more advanced profiling, including the memory profiling, us
 
 ```{r Rprof}
 #| include: true
-#| eval: false
-#| cache: true
+#| eval: true
+#| cache: false
 
 Rprof('profiler_test.out', interval = 0.01, memory.profiling = T)
 for (i in 1:5) {
   result <- fun_fill_loop2(n = 10e4, "runif")
-  print(result)
+  print(head(result))
 }
 Rprof(NULL)
 ```
@@ -548,6 +552,7 @@ And let us summarise:
 ```{r summaryRprof}
 summary <- summaryRprof("profiler_test.out", memory = "both")
 knitr::kable(summary$by.self)
+unlink("profiler_test.out")
 ```
 
 ## Profiling -- `profr` package
@@ -570,7 +575,7 @@ This returns a table that can be visualised:
 #| include: false
 save(profile_df, file = 'profiler_test2.Rdat')
 load("profiler_test2.Rdat")
-#unlink("profiler_test2.Rdat")
+unlink("profiler_test2.Rdat")
 ```
 
 ```{r show_profr_result}
@@ -590,6 +595,7 @@ We can also plot the results using -- `proftools` package-
 library(proftools)
 profile_df2 <- readProfileData("profiler_test2.out")
 plotProfileCallGraph(profile_df2, style = google.style, score = "total")
+unlink("profiler_test2.out")
 ```
 
 ## Profiling with `profvis`
@@ -618,9 +624,11 @@ profvis({fun_fill_loop2(1e4, 'runif')
 ## Optimizing your code
 
 ::: {.blockquote}
+
 We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil. Yet we should not pass up our opportunities in that critical 3%. A good programmer will not be deluded into complacency by such reasoning, he will be wise to look carefully at the critical code; but only after that code has been identified.
 
 -- Donald Knuth
+
 :::
 
 :::: {.columns}
