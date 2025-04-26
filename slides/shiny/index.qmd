@@ -5,9 +5,6 @@ image: "assets/featured.webp"
 format:
   revealjs:
     css: "assets/styles.css"
-    embed-resources: false
-filters:
-  - shinylive
 ---
 
 ## {visibility="hidden"}
@@ -17,8 +14,8 @@ filters:
 
 library(dplyr)
 library(ggplot2)
-#library(kableExtra) # for table
-#library(gridExtra) # multiple plot alignment
+# library(kableExtra) # for table
+# library(gridExtra) # multiple plot alignment
 library(shiny)
 # not loaded but, but used
 # library(ggpubr)
@@ -185,9 +182,9 @@ R -e "shiny::runApp('~/shinyapp')"
 
 ## UI
 
-```{shinylive-r}
-#| standalone: true
-#| components: [editor, viewer]
+```{r}
+#| eval: false
+
 shinyApp(
   ui = fluidPage(
     titlePanel("Title Panel"),
@@ -231,16 +228,15 @@ sidebarPanel(helpText("Sidebar Panel"))
 
 - Shiny is built on [Bootstrap 3](https://getbootstrap.com/docs/3.3/)
 
-![](assets/ui-nostyle.jpg)
+![](assets/ui-nostyle.webp)
 :::
 ::::
 
 ## 
 
-```{shinylive-r}
-#| standalone: true
-#| components: [editor, viewer]
-#| viewerHeight: 300
+```{r}
+#| eval: false
+
 shinyApp(
   ui = fluidPage(
     titlePanel("Title Panel"),
@@ -277,11 +273,12 @@ shinyApp(
 )
 ```
 
+![](assets/app-layout.webp){width="600px"}
+
 ## UI • Widgets • Input
 
-```{shinylive-r}
-#| standalone: true
-#| components: [editor, viewer]
+```{r}
+#| eval: false
 
 shinyApp(
   ui = fluidPage(
@@ -317,9 +314,11 @@ selectInput(inputId, label, choices,
 
 ## UI • Widgets • Input
 
-```{shinylive-r}
-#| standalone: true
-#| components: [editor, viewer]
+:::: {.columns}
+::: {.column width="70%"}
+
+```{r}
+#| eval: false
 
 shinyApp(
 ui=fluidPage(
@@ -347,6 +346,13 @@ server=function(input,output) {
 
 
 ```
+
+:::
+::: {.column width="30%"}
+![](assets/app-widgets-input.webp){width="50%"}
+:::
+
+::::
 
 [[Widgets gallery](https://shiny.posit.co/r/gallery/widgets/widget-gallery/)]{.smaller}
 
@@ -387,9 +393,9 @@ Widgets are visual objects on a page to allow for data input. Input and output v
 
 ## UI • Widgets • Outputs
 
-```{shinylive-r}
-#| standalone: true
-#| components: [editor, viewer]
+```{r}
+#| eval: false
+
 shinyApp(
 ui=fluidPage(
            textInput("text_input",label="textInput",value="hello world"),
@@ -414,9 +420,12 @@ textOutput(outputId)
 
 ## UI • Widgets • Outputs
 
-```{shinylive-r}
-#| standalone: true
-#| components: [editor, viewer]
+:::: {.columns}
+::: {.column width="70%"}
+
+```{r}
+#| eval: false
+
 shinyApp(
 ui=fluidPage(fluidRow(column(5,
            textInput("text_input",label="textInput",value="<h3 style='color:red'>Red text</h3>"),
@@ -437,12 +446,13 @@ server=function(input, output) {
     plot(iris[,1],iris[,2])
   })
 })
-
-
-
-
-
 ```
+
+:::
+::: {.column width="30%"}
+![](assets/app-widgets-output.webp){width="70%"}
+:::
+::::
 
 ## UI • Widgets • Output Functions
 
@@ -458,9 +468,8 @@ server=function(input, output) {
 
 ## A complete app
 
-```{shinylive-r}
-#| standalone: true
-#| components: [editor, viewer]
+```{r}
+#| eval: false
 shinyApp(
 ui = fluidPage(
   h3("Temperature Converter"),
@@ -513,9 +522,8 @@ server=function(input, output) {
 
 ## Rendering UI
 
-```{shinylive-r}
-#| standalone: true
-#| components: [editor, viewer]
+```{r}
+#| eval: false
 shinyApp(
 ui=fluidPage(
   selectInput("type", label="Select input type", choices=c("Text","Number")),
@@ -545,9 +553,8 @@ server=function(input, output) {
 
 ## Rendering UI
 
-```{shinylive-r}
-#| standalone: true
-#| components: [editor, viewer]
+```{r}
+#| eval: false
 
 shinyApp(
 ui=fluidPage(
@@ -568,19 +575,12 @@ server=function(input, output) {
   output$plot <- renderPlot({hist(data()[, 1])})
   output$table <- renderTable({head(data())})
 })
-
-
-
-
-
-
 ```
 
 ## Rendering UI
 
-```{shinylive-r}
-#| standalone: true
-#| components: [editor, viewer]
+```{r}
+#| eval: false
 
 shinyApp(
 ui=fluidPage(
@@ -610,7 +610,7 @@ server=function(input, output) {
 - Code doesn't always run line-by-line (Non-linear execution)
 - Code executes when dependencies change
 
-![](assets/reactivity/reactlog.png){width="50%"}  
+![](assets/reactivity/reactlog.webp){width="50%"}  
 [[reactlog](https://rstudio.github.io/reactlog/index.html)]{.smaller}
 
 ## Reactives
@@ -630,9 +630,9 @@ Reactive values cannot be accessed outside a reactive context
 
 :::: {.columns}
 ::: {.column width="55%"}
-```{shinylive-r}
-#| standalone: true
-#| components: [editor, viewer]
+```{r}
+#| eval: false
+
 shinyApp(
   ui = fluidPage(
     numericInput("num", "Enter number",
@@ -649,15 +649,15 @@ shinyApp(
 ```
 :::
 ::: {.column width="45%"}
-![](assets/reactive-context-error.jpg)
+![](assets/reactive-context-error.webp)
 :::
 ::::
 
 ## Reactive dynamics
 
-```{shinylive-r}
-#| standalone: true
-#| components: [editor, viewer]
+```{r}
+#| eval: false
+
 shinyApp(
   ui=fluidPage(
     numericInput("num_input",label="Observations",value=50),
@@ -671,31 +671,30 @@ shinyApp(
 
 :::: {.r-stack}
 ::: {.fragment}
-![](assets/reactivity/rg-1/1.jpg)
+![](assets/reactivity/rg-1/1.webp)
 
 :::
 ::: {.fragment}
 
-![](assets/reactivity/rg-1/2.jpg)
+![](assets/reactivity/rg-1/2.webp)
 
 :::
 ::: {.fragment}
 
-![](assets/reactivity/rg-1/3.jpg)
+![](assets/reactivity/rg-1/3.webp)
 
 :::
 ::: {.fragment}
 
-![](assets/reactivity/rg-1/4.jpg)
+![](assets/reactivity/rg-1/4.webp)
 
 :::
 ::::
 
 ## Reactive dynamics
 
-```{shinylive-r}
-#| standalone: true
-#| components: [editor, viewer]
+```{r}
+#| eval: false
 shinyApp(
   ui=fluidPage(
     numericInput("num_input",label="Observations",value=50),
@@ -712,46 +711,46 @@ shinyApp(
 
 :::: {.r-stack}
 ::: {.fragment}
-![](assets/reactivity/rg-2/1.jpg)
+![](assets/reactivity/rg-2/1.webp)
 
 :::
 ::: {.fragment}
 
-![](assets/reactivity/rg-2/2.jpg)
+![](assets/reactivity/rg-2/2.webp)
 
 :::
 ::: {.fragment}
 
-![](assets/reactivity/rg-2/3.jpg)
+![](assets/reactivity/rg-2/3.webp)
 
 :::
 ::: {.fragment}
 
-![](assets/reactivity/rg-2/4.jpg)
-
-:::
-
-::: {.fragment}
-
-![](assets/reactivity/rg-2/5.jpg)
+![](assets/reactivity/rg-2/4.webp)
 
 :::
 
 ::: {.fragment}
 
-![](assets/reactivity/rg-2/6.jpg)
+![](assets/reactivity/rg-2/5.webp)
 
 :::
 
 ::: {.fragment}
 
-![](assets/reactivity/rg-2/7.jpg)
+![](assets/reactivity/rg-2/6.webp)
 
 :::
 
 ::: {.fragment}
 
-![](assets/reactivity/rg-2/8.jpg)
+![](assets/reactivity/rg-2/7.webp)
+
+:::
+
+::: {.fragment}
+
+![](assets/reactivity/rg-2/8.webp)
 
 :::
 
@@ -759,9 +758,8 @@ shinyApp(
 
 ## Reactive dynamics
 
-```{shinylive-r}
-#| standalone: true
-#| components: [editor, viewer]
+```{r}
+#| eval: false
 shinyApp(
   ui=fluidPage(
     numericInput("num_input",label="Observations",value=50),
@@ -777,13 +775,12 @@ shinyApp(
   })
 ```
 
-![](assets/reactivity/rg-2/8.jpg)
+![](assets/reactivity/rg-2/8.webp)
 
 ## Reactive dynamics
 
-```{shinylive-r}
-#| standalone: true
-#| components: [editor, viewer]
+```{r}
+#| eval: false
 shinyApp(
   ui=fluidPage(
     numericInput("num_input",label="Observations",value=50),
@@ -802,51 +799,51 @@ shinyApp(
 
 :::: {.r-stack}
 ::: {.fragment}
-![](assets/reactivity/rg-3/1.jpg)
+![](assets/reactivity/rg-3/1.webp)
 :::
 
 ::: {.fragment}
-![](assets/reactivity/rg-3/2.jpg)
+![](assets/reactivity/rg-3/2.webp)
 :::
 
 ::: {.fragment}
-![](assets/reactivity/rg-3/3.jpg)
+![](assets/reactivity/rg-3/3.webp)
 :::
 
 ::: {.fragment}
-![](assets/reactivity/rg-3/4.jpg)
+![](assets/reactivity/rg-3/4.webp)
 :::
 
 ::: {.fragment}
-![](assets/reactivity/rg-3/5.jpg)
+![](assets/reactivity/rg-3/5.webp)
 :::
 
 ::: {.fragment}
-![](assets/reactivity/rg-3/6.jpg)
+![](assets/reactivity/rg-3/6.webp)
 :::
 
 ::: {.fragment}
-![](assets/reactivity/rg-3/7.jpg)
+![](assets/reactivity/rg-3/7.webp)
 :::
 
 ::: {.fragment}
-![](assets/reactivity/rg-3/8.jpg)
+![](assets/reactivity/rg-3/8.webp)
 :::
 
 ::: {.fragment}
-![](assets/reactivity/rg-3/9.jpg)
+![](assets/reactivity/rg-3/9.webp)
 :::
 
 ::: {.fragment}
-![](assets/reactivity/rg-3/10.jpg)
+![](assets/reactivity/rg-3/10.webp)
 :::
 
 ::: {.fragment}
-![](assets/reactivity/rg-3/11.jpg)
+![](assets/reactivity/rg-3/11.webp)
 :::
 
 ::: {.fragment}
-![](assets/reactivity/rg-3/12.jpg)
+![](assets/reactivity/rg-3/12.webp)
 :::
 
 ::::
@@ -904,7 +901,7 @@ server=function(input, output) {
 :::
 
 ::: {.column width="30%"}
-![](assets/val1.png)
+![](assets/val1.webp)
 :::
 ::::
 
@@ -939,7 +936,7 @@ server=function(input, output) {
 :::
 
 ::: {.column width="30%"}
-![](assets/val2.png)
+![](assets/val2.webp)
 :::
 ::::
 
@@ -973,7 +970,7 @@ server=function(input,output) {
 :::
 
 ::: {.column width="30%"}
-![](assets/val3.png)
+![](assets/val3.webp)
 :::
 ::::
 
@@ -1036,9 +1033,8 @@ server = function(input,output,session) {
 
 ## Updating widgets
 
-```{shinylive-r}
-#| standalone: true
-#| components: [editor, viewer]
+```{r}
+#| eval: false
 shinyApp(
   ui = fluidPage(
     selectInput("data", "Choose a dataset:", choices = c("mtcars", "iris", "faithful")),
@@ -1087,9 +1083,8 @@ shinyApp(
 - `reactVal()` `reactValues()`
 - Store reactive values that can be accessed from any reactive context
 
-```{shinylive-r}
-#| standalone: true
-#| components: [editor, viewer]
+```{r}
+#| eval: false
 shinyApp(
   ui = fluidPage(
     actionButton("add","Add"),
@@ -1115,9 +1110,8 @@ shinyApp(
 
 ## Controlling reactivity using action buttons
 
-```{shinylive-r}
-#| standalone: true
-#| components: [editor, viewer]
+```{r}
+#| eval: false
 shinyApp(
 ui = fluidPage(
   h3("Temperature Converter"),
@@ -1213,9 +1207,9 @@ output$button_download <- downloadHandler(
 
 ## Modules
 
-```{shinylive-r}
-#| standalone: true
-#| components: [editor, viewer]
+```{r}
+#| eval: false
+
 counter_ui <- function(id) {
   ns <- NS(id)
   div(
@@ -1327,11 +1321,9 @@ fluidPage(theme = shinythemes::themeSelector())
 [[shinythemes](https://rstudio.github.io/shinythemes/)]{.smaller}
 :::
 ::: {.column width="60%"}
-```{shinylive-r}
-#| eval: true
-#| echo: false
-#| standalone: true
-#| viewerHeight: 650
+```{r}
+#| eval: false
+
 library("shinythemes")
 
 shinyApp(

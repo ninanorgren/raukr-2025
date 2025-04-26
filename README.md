@@ -195,10 +195,6 @@ quarto add quarto-ext/fontawesome
 quarto add royfrancis/quarto-accordion
 # Top logos in revealjs slides
 quarto add royfrancis/quarto-reveal-logo
-# Shiny in the browser
-quarto add quarto-ext/shinylive
-# R in the browser
-quarto add coatless/quarto-webr
 ```
 
 ---
