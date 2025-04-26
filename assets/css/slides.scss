@@ -206,10 +206,6 @@ $presentation-h6-font-size: 1em;
   margin-bottom: 0.3rem;
 }
 
-.reveal .callout.callout-titled .callout-body>.callout-content>:last-child {
- // margin-bottom: 0.1rem;
-}
-
 .reveal div.callout.callout-style-simple .callout-icon::before, 
 .reveal div.callout.callout-style-default .callout-icon::before {
   height: 1.4rem;
@@ -218,11 +214,7 @@ $presentation-h6-font-size: 1em;
 }
 
 .reveal .callout.callout-titled .callout-icon::before {
-//  margin-top: 0.6rem;
-}
-
-.reveal div.callout.callout-style-simple:not(.callout-titled) .callout-icon::before {
-  margin-top: 1rem;
+  margin-top: 0.55rem;
 }
 
 .reveal div.callout.callout-note.callout-style-default .callout-title {
