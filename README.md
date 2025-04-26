@@ -98,6 +98,8 @@ In browser, go to [http://localhost:8787/](http://localhost:8787/). Use followin
 > username: rstudio  
 > password: raukr
 
+Then set working directory to `/home/rstudio/work`.
+
 ## Convert HTML slides to PDF
 
 Another docker image is available to convert any RevealJS slides from any URL to PDF.
