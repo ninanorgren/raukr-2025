@@ -4,6 +4,7 @@ project:
   render: 
     - "*.qmd"
     - "*.md"
+    - "!home_env.qmd"
     - "!slides/quarto/sample/*.qmd"
 
 website:
@@ -80,7 +81,7 @@ format:
     include-in-header: "assets/include_head.html"
     include-before-body: "assets/include_body_before.html"
     include_after_body: "assets/include_body_after.html"
-    theme: ["default","assets/css/slides.scss"]
+    theme: ["default", "assets/css/slides.scss"]
     df-print: kable
     width: 1280
     height: 720
@@ -97,7 +98,7 @@ format:
     fig-align: left
     chalkboard: true
     callout-icon: true
-    hero: "/assets/images/hero.webp"
+    # hero: "/assets/images/hero.webp"
     title-slide-attributes:
       data-background-image: "/assets/images/cover.webp"
       data-background-size: "cover"
@@ -130,5 +131,3 @@ filters:
   - fontawesome
   - accordion
 
-revealjs-plugins:
-  - drop

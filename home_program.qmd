@@ -27,7 +27,7 @@ Vancouver, Canada
 
 ![](assets/images/profile/christophe-dervieux.webp){.nolightbox}
 
-[Christophe Dervieux](https://github.com/cderv)[To be confirmed]{.badge}
+[Christophe Dervieux](https://github.com/cderv) [Online]{.badge}
 
 Software engineer at Posit  
 Paris, France  
@@ -37,7 +37,7 @@ Paris, France
 
 ![](assets/images/profile/henrik-bengtsson.webp){.nolightbox}
 
-[Henrik Bengtsson](https://www.linkedin.com/in/henrikbengtsson/)[To be confirmed]{.badge}
+[Henrik Bengtsson](https://www.linkedin.com/in/henrikbengtsson/)  
 
 Project lead for [Futureverse](https://www.futureverse.org/)  
 Associate professor in Epidemiology & Biostatistics  

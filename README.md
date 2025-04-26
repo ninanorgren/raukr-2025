@@ -5,7 +5,7 @@
 
 To edit, preview and render documents, you need one or more of the following requirements:
 
-- You must use [Quarto\>=1.5.0](https://quarto.org/docs/download/)
+- You must use [Quarto\>=1.6.42](https://quarto.org/docs/download/)
 - If using RStudio, use [v2024.12.0 or newer](https://posit.co/download/rstudio-desktop/)
 - [VSCode](https://arinbasu.medium.com/why-quarto-with-vscode-is-a-great-data-science-tool-f0a259d28702) is a good alternative to RStudio for quarto documents
 - You need to install the R packages necessary for your topic/document
@@ -69,7 +69,7 @@ git commit -m "Added topic"
 
 A docker container is available for rendering quarto documents and to run RStudio server.
 
-:warning: ~11GB
+:warning: ~14GB
 
 ```
 docker pull --platform=linux/amd64 ghcr.io/nbisweden/workshop-raukr:latest
@@ -81,16 +81,16 @@ docker pull --platform=linux/amd64 ghcr.io/nbisweden/workshop-raukr:latest
 
 ```
 # run in the cloned repo
-docker run --platform=linux/amd64 --rm -u 1000:1000 -v ${PWD}:/home/rstudio/raukr ghcr.io/nbisweden/workshop-raukr:latest quarto render index.qmd
+docker run --platform=linux/amd64 --rm -u 1000:1000 -v ${PWD}:/home/rstudio/work ghcr.io/nbisweden/workshop-raukr:latest quarto render index.qmd
 ```
 
 **Run RStudio server**
 
-- To develop or interactively work with notebooks
+- To develop or interactively work with notebooks in Rstudio
 
 ```
 # run in the cloned repo
-docker run --platform=linux/amd64 -e PASSWORD=raukr -p 8787:8787  -p 4200:4200 -v ${PWD}:/home/rstudio/raukr ghcr.io/nbisweden/workshop-raukr:latest
+docker run --platform=linux/amd64 -e PASSWORD=raukr -p 8787:8787  -p 4200:4200 -v ${PWD}:/home/rstudio/work ghcr.io/nbisweden/workshop-raukr:latest
 ```
 
 In browser, go to [http://localhost:8787/](http://localhost:8787/). Use following credentials:
@@ -98,35 +98,9 @@ In browser, go to [http://localhost:8787/](http://localhost:8787/). Use followin
 > username: rstudio  
 > password: raukr
 
-On adding new packages, see below.
-
-**Updating docker**
-
-If new packages are added/required, then they need to be added to the docker image as well. It is assumed that you are working in the container. Add packages as you normally would. Once your new materials and new packages are finalized, follow the steps below.
-
-- Update the `renv.lock` file. You need to run this in R in the container and in the root of the repo. This will add your new packages to `renv.lock`. Pay attention to what is changed. If it looks ok, go forward.
-
-```
-renv::snapshot(type="all")
-```
-
-- Rebuild the container with the new packages. Run this in a local terminal in the root of the repo. **Increment the version number as needed.**
-
-```
-docker build --platform=linux/amd64 -t ghcr.io/nbisweden/workshop-raukr:1.4 -t ghcr.io/nbisweden/workshop-raukr:latest --file dockerfile .
-```
-
-- Push image back to repository
-
-```
-# login if needed
-# echo "personalaccesstoken" | docker login ghcr.io -u githubusername --password-stdin
-
-docker push ghcr.io/nbisweden/workshop-raukr:1.4
-docker push ghcr.io/nbisweden/workshop-raukr:latest
-```
-
 ## Convert HTML slides to PDF
+
+Another docker image is available to convert any RevealJS slides from any URL to PDF.
 
 ```
 docker run --platform=linux/amd64 -v $PWD:/work astefanutti/decktape url-to-slide.html /work/output.pdf
@@ -134,6 +108,7 @@ docker run --platform=linux/amd64 -v $PWD:/work astefanutti/decktape url-to-slid
 
 ## Tips & Conventions
 
+- Be selective about packages used. Drop packages and dependencies that are not crucial
 - For compute heavy steps, save intermediates and read them in
 - Be mindful of the size of files
   - Store large data files elsewhere (dropbox, google drive etc) and link them
@@ -206,6 +181,21 @@ content
 ```
 
 - To view a demo presentation, click [here](https://nbisweden.github.io/raukr-2025/slides/demo/) 
+
+- When running `quarto preview`, it might try to render other files. If you are in the container, it would just render, otherwise break due to missing packages. If `_freeze` folder is present, it might help. The last resort is to temporarly delete the qmd files that it's trying to render.
+
+## Quarto extensions
+
+Quarto extensions in use:
+
+```bash
+# Fontawesome icons
+quarto add quarto-ext/fontawesome
+# Accordion layout
+quarto add royfrancis/quarto-accordion
+# Top logos in revealjs slides
+quarto add royfrancis/quarto-reveal-logo
+```
 
 ---
 
