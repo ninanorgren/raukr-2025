@@ -32,7 +32,8 @@ This is an example to show the layout of widgets on a webpage using shiny functi
 In the main panel, the use of tab panels are demonstrated. The function `tabsetPanel()` is used to define a tab panel set and individual tabs are defined using `tabPanel()`. `fluidRow()` and `column()` are used to structure elements within each tab. The width of each column is specified. Total width of columns must add up to 12.
 
 ```{r}
-#| column: page
+#| label: ui-layout
+#| eval: false
 
 library(shiny)
 ui <- fluidPage(
@@ -76,11 +77,16 @@ server <- function(input,output){}
 shinyApp(ui=ui,server=server)
 ```
 
+![](assets/ui-layout.webp)
+
 ## UI • Widgets • Input
 
 Input widgets are used to accept content interactively from the user. These widgets usually end in `Input` like `selectInput()`. Below are usage examples of several of shiny's built-in widgets. Every widget has a variable name which is accessible through `input$` in the server function. For example, the value of a variable named `text-input` would be accessed through `input$text-input`.
 
 ```{r}
+#| label: ui-widgets-input
+#| eval: false
+
 shinyApp(
 ui=fluidPage(
   fluidRow(
@@ -105,11 +111,16 @@ server=function(input,output){},
 options=list(height=900))
 ```
 
+![](assets/ui-widgets-input.webp)
+
 ## UI • Widgets • Outputs
 
 Similar to input widgets, output widgets are used to display information to the user on the webpage. These widgets usually end in `Output` like `textOutput()`. Every widget has a variable name accessible under `output$` to which content is written in the server function. Render functions are used to write content to output widgets. For example `renderText()` is used to write text data to `textOutput()` widget.
 
 ```{r}
+#| label: ui-widgets-output
+#| eval: false
+
 shinyApp(
   ui=fluidPage(fluidRow(column(6,
              textInput("text_input",label="textInput",value="<h3 style='color:red'>Red text</h3>"),
@@ -132,6 +143,8 @@ shinyApp(
 options=list(height=700))
 ```
 
+![](assets/ui-widgets-output.webp)
+
 In this example, we have a text input box which takes user text and outputs it in three different variations. The first output is html output `htmlOutput()`. Since the default text is html content, the output is red colored text. A normal non-html text would just look like normal text. The second output is normal text output `textOutput()`. The third variation is `verbatimTextOutput()` which displays text in monospaced code style. This example further shows table output and plot output.
 
 ## Dynamic UI
@@ -141,6 +154,9 @@ Sometimes we want to add, remove or change currently loaded UI widgets condition
 In the example below, the output plot is displayed only if the selected dataset is **iris**.
 
 ```{r}
+#| label: ui-dynamic
+#| eval: false
+
 shinyApp(
 ui=fluidPage(
   selectInput("data_input",label="Select data",
@@ -161,6 +177,8 @@ server=function(input,output) {
 })
 ```
 
+![](assets/ui-dynamic.webp)
+
 Here, conditional UI is used to selectively display an output widget (plot). Similarly, this idea can be used to selectively display any input or output widget.
 
 ## Updating widgets
@@ -168,6 +186,9 @@ Here, conditional UI is used to selectively display an output widget (plot). Sim
 Widgets can be updated with new values dynamically. `observe()` and `observeEvent()` functions can monitor the values of interest and update relevant widgets.
 
 ```{r}
+#| label: updating-widgets
+#| eval: false
+
 shinyApp(
 ui=fluidPage(
   selectInput("data_input",label="Select data",choices=c("mtcars","faithful","iris")),
@@ -191,6 +212,8 @@ server=function(input,output,session) {
 options=list(height=600))
 ```
 
+![](assets/ui-widgets-update.webp)
+
 In this example, the user selects a dataset and a column from the selected dataset to be plotted as a histogram. The column name selection widget must automatically update it's choices depending on the selected dataset. This achieved using `observe()` where the `updateSelectInput()` function updates the selection choices. Notice that a third option `session` is in use in the server function. ie; `server=function(input,output,session)`. And `session` is also the first argument in `updateSelectInput()`. Session keeps track of values in the current session.
 
 When changing the datasets, we can see that there is a short red error message. This is because, after we have selected a new dataset, the old column name from the previous dataset is searched for in the new dataset. This occurs for a short time and causes the error. This can be fixed using careful error handling. We will discuss this in another section.
@@ -200,6 +223,9 @@ When changing the datasets, we can see that there is a short red error message. 
 You might've noticed that shiny tends to update changes immediately as the input widgets change. This may not be desirable in all circumstances. For example, if the apps runs a heavy calculation, it is more efficient to grab all the changes and execute in one step rather than executing the heavy calculation after every input change. To illustrate this, we have an example below where we plot an image which has the title as input text. Try adding a long title to it.
 
 ```{r}
+#| label: isolate-1
+#| eval: false
+
 shinyApp(
   ui=fluidPage(
     textInput("in_title",label="Title",value="Title"),
@@ -213,11 +239,16 @@ shinyApp(
 )
 ```
 
+![](assets/isolate-1.webp)
+
 The plot changes as soon as the input text field is changed. And as we type in text, the image is continuously being redrawn. This can be computationally intensive depending on the situation. A better solution would be to write the text completely without any reactivity and when done, let the app know that you are ready to redraw.
 
 We can add an action button such that the plot is changed only when the button is clicked.
 
 ```{r}
+#| label: isolate-2
+#| eval: false
+
 shinyApp(
   ui=fluidPage(
     textInput("in_title",label="Title",value="Title"),
@@ -233,6 +264,8 @@ shinyApp(
 )
 ```
 
+![](assets/isolate-2.webp)
+
 Now, changes to any of the input fields do not initiate the plot function. The plot is redrawn only when the action button is clicked. When the action button is click, the current values in the input fields are collected and used in the plotting function.
 
 ## Error validation
@@ -240,6 +273,8 @@ Now, changes to any of the input fields do not initiate the plot function. The p
 Shiny returns an error when a variable is NULL, NA or empty. This is similar to normal R operation. The errors show up as bright red text. By using careful error handling, we can print more informative and less distracting error messages. We also have the option of hiding error messages.
 
 ```{r}
+#| eval: false
+
 shinyApp(
 ui=fluidPage(
   selectInput("data_input",label="Select data",
@@ -261,6 +296,8 @@ We can add an extra line to the above app so that the selected string is validat
 Below we use the `need()` function to check the input. It checks if the input is NULL, NA or an empty string and returns a specified message if TRUE. `try()` is optional and is used to catch any other unexpected errors.
 
 ```{r}
+#| eval: false
+
 shinyApp(
 ui=fluidPage(
   selectInput("data_input",label="Select data",
@@ -287,6 +324,8 @@ Now we see an informative gray message (less scary) asking the user to select a 
 We can use a custom function instead of using `need()`. Below, we have created a function called `valfun()` that checks if the input is NULL, NA or an empty string. This is then used in `validate()`.
 
 ```{r}
+#| eval: false
+
 valfn <- function(x) if(is.null(x) | is.na(x) | x=="") return("Input data is incorrect.")
 
 shinyApp(
@@ -313,6 +352,8 @@ options=list(height="350px"))
 The last option is to simple hide the error. This may be used in situations where there is no input needed from the user. We use `req()` to check if the input is valid, else stop execution there till the condition becomes true.
 
 ```{r}
+#| eval: false
+
 shinyApp(
 ui=fluidPage(
   selectInput("data_input",label="Select data",
@@ -339,6 +380,8 @@ As expected there is no error or any message at all. This is not always the best
 Finally, instead of printing messages about the error or hiding the error, we can try to resolve the errors from the previous section in a more robust manner. `shiny::req(input$header_input)` is added to ensure that a valid column name string is available before running any of the `renderPlot()` commands. Second, we add `validate(need(input$header_input %in% colnames(getdata()),message="Incorrect column name."))` to ensure that the column name is actually a column in the currently selected dataset.
 
 ```{r}
+#| eval: false
+
 shinyApp(
 ui=fluidPage(
   selectInput("data_input",label="Select data",choices=c("mtcars","faithful","iris")),
@@ -362,6 +405,8 @@ server=function(input,output,session) {
 options=list(height=600))
 ```
 
+![](assets/error-validation-5.webp)
+
 Now, we do not see any error messages. Note that shiny apps on shinyapps.io do not display the complete regular R error message for security reasons. It returns a generic error message in the app. One needs to inspect the error logs to view the actual error message.
 
 ## Download • Data
@@ -371,6 +416,8 @@ It is often desirable to let the user down data tables and plots as images. This
 In the example below, we are downloading a table as a csv text file. We define a button that accepts the action input from the user. The `downloadHandler()` function has the file name argument, and the content argument where we specify the `write.csv()` command. Note that this example needs to be opened in a browser and may not in the RStudio preview. In the RStudio preview, click on **Open in Browser**.
 
 ```{r}
+#| eval: false
+
 shinyApp(
   ui=fluidPage(
     selectInput("data_input",label="Select data",
@@ -396,11 +443,15 @@ shinyApp(
 )
 ```
 
+![](assets/download-data.webp)
+
 ## Download • Plot
 
 In this next example, we are downloading a plot. In the content part of `downloadHandler()`, we specify commands to export a PNG image. Note that this example needs to be opened in a browser and may not in the RStudio preview. In the RStudio preview, click on **Open in Browser**.
 
 ```{r}
+#| eval: false
+
 shinyApp(
   ui=fluidPage(
     selectInput("data_input",label="Select data",
@@ -412,18 +463,41 @@ shinyApp(
 
   server=function(input, output) {
     
-    getdata <- reactive({ get(input$data_input, 'package:datasets') })
-    output$text_output <- renderText(paste0("Selected dataset: ",input$data_input))
+    getdata <- reactive({ 
+      get(input$data_input, 'package:datasets') 
+    })
+
+    output$text_output <- renderText({
+      paste0("Selected dataset: ",input$data_input)
+    })
     
-    output$plot_output <- renderPlot({hist(getdata()[,1])})
+    output$plot_output <- renderPlot({
+      d <- getdata()
+      first_col <- d[[1]]
+      col_name <- names(d)[1]
+
+      hist(
+        first_col,
+        main = paste("Histogram of", input$data_input),
+        xlab = col_name
+      )
+    })
   
   output$button_download <- downloadHandler(
     filename = function() {
       paste0(input$data_input,".png")
     },
     content = function(file) {
+      d <- getdata()
+      first_col <- d[[1]]
+      col_name <- names(d)[1]
+
       png(file)
-      hist(getdata()[, 1])
+      hist(
+        first_col,
+        main = paste("Histogram of", input$data_input),
+        xlab = col_name
+      )
       dev.off()
     })
   },
@@ -431,7 +505,7 @@ shinyApp(
 )
 ```
 
-:::
+![](assets/download-plot.webp)
 
 ## Shinylive
 
@@ -593,13 +667,12 @@ shinyApp(
 
 ````
 ```{{shinylive-r}}
-#| eval: false
 #| standalone: true
 #| components: [editor, viewer]
 #| layout: vertical
 #| viewerHeight: 450
 
-webr::install(c("ggplot2", "bslib", "palmerpenguins", "htmltools"))
+# webr::install(c("ggplot2", "bslib", "palmerpenguins", "htmltools"))
 
 library(htmltools)
 library(bslib)
@@ -970,8 +1043,10 @@ output$out_plot <- renderPlot({
 This is finally added to the server function.
 
 ```{r}
+#| eval: false
 
 library(shiny)
+library(ggplot2)
 
 shinyApp(
   ui=fluidPage(
@@ -995,6 +1070,8 @@ shinyApp(
   }
 )
 ```
+
+![](assets/data-explorer-3.webp)
 
 You can expand this app to other datasets and map more variables to ggplot etc. Can you add the functionality to [download the plots](https://shiny.rstudio.com/gallery/file-download.html)? Or perhaps to [upload a csv file](https://shiny.rstudio.com/articles/upload.html) and plot from that file?
 
@@ -1278,6 +1355,7 @@ We use a sidebar layout. The input controls go on the sidebar panel and the outp
 
 
 ```{r rnaseqpower-scaffold}
+#| eval: false
 #| fig-height: 6
 #| fig-width: 8
 library(shiny)
@@ -1304,6 +1382,8 @@ shinyApp(
 )
 ```
 
+![](assets/rnaseqpower-1.webp)
+
 The app should visually look close to our final end result. Check that the widgets work.
 
 The next step is to wire up the inputs to the `rnapower()` function and return the result to the output text field.
@@ -1311,6 +1391,7 @@ The next step is to wire up the inputs to the `rnapower()` function and return t
 {{< fa clipboard-list >}} Try to see if you can get this to work.
 
 ```{r rnaseqpower-server}
+#| eval: false
 #| fig-height: 6
 #| fig-width: 8
 library(shiny)
@@ -1342,6 +1423,8 @@ shinyApp(
 )
 ```
 
+![](assets/rnaseqpower-2.webp)
+
 Verify that the inputs and outputs work. One can stop at this point if you only need to compute number of samples. But, we will continue to enhance the app to be able to compute any of the other parameters.
 
 ### Conditional UI
@@ -1351,6 +1434,7 @@ The function can estimate not only **sample size**, but **cv**, **effect**, **al
 {{< fa clipboard-list >}} Try to add a selection based conditional UI. `?selectInput()`, `?uiOutput()`, `?renderUI()`.
 
 ```{r rnaseqpower-conditionalui}
+#| eval: false
 #| fig-height: 6
 #| fig-width: 8
 library(shiny)
@@ -1436,6 +1520,8 @@ shinyApp(
 )
 ```
 
+![](assets/rnaseqpower-3.webp)
+
 Let's summarize what we have done. In the **ui** part, instead of directly including the `rnapower()` input variable in the `sidebarPanel()`, we have added a selection input and a conditional UI output. The content inside the output UI depends on the selection made by the user.
 
 ```{r}
@@ -1492,6 +1578,7 @@ Blank space are removed, the string is split by comma into a list of strings, th
 {{< fa clipboard-list >}} Update the app such that all numeric inputs are replaced by text inputs and the server logic is able to parse the strings into numbers.
 
 ```{r rnaseqpower-multiple-input}
+#| eval: false
 #| fig-height: 6
 #| fig-width: 8
 library(shiny)
@@ -1611,6 +1698,7 @@ It is good practice to check whether the current code can be cleaned-up/polished
 {{< fa clipboard-list >}} Try to figure out how the code can be reorganized and simplified.
 
 ```{r rnaseqpower-cleaner}
+#| eval: false
 #| fig-height: 6
 #| fig-width: 8
 library(shiny)
@@ -1685,6 +1773,7 @@ Here are the limits we want to set:
 {{< fa clipboard-list >}} Try to figure out how to add input validation. `?shiny::validate()`.
 
 ```{r rnaseqpower-input-validation}
+#| eval: false
 #| fig-height: 6
 #| fig-width: 8
 library(shiny)
@@ -1763,6 +1852,8 @@ shinyApp(
 )
 ```
 
+![](assets/rnaseqpower-3.webp)
+
 We have added `validate()` to all incoming text to ensure that user input is within reasonable limits.
 
 {{< fa clipboard-list >}} Test that the validation works by inputting unreasonable inputs such as alphabets, symbols etc into the input fields.
@@ -1774,6 +1865,7 @@ This part is purely cosmetic. We can add a custom theme from R package `shinythe
 {{< fa clipboard-list >}} Try changing the theme and pick one that you like. Check out `?shinythemes`. The themes can be visualized on [Bootswatch](https://bootswatch.com/).
 
 ```{r rnaseqpower-theme}
+#| eval: false
 #| fig-height: 6
 #| fig-width: 8
 library(shiny)
@@ -1854,6 +1946,8 @@ shinyApp(
 )
 ```
 
+![](assets/rnaseqpower-4.webp)
+
 This is the completed app.
 
 ### Deployment
@@ -1885,7 +1979,6 @@ This completes this app tutorial. Hope you have enjoyed this build and learned s
 
 ```{r}
 #| label: session
-
 sessionInfo()
 ```
 
