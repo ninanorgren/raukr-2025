@@ -56,7 +56,7 @@ To preview from inside docker: `quarto preview labs/topic/index.qmd --host 0.0.0
     
 :warning: Do not run `quarto render` as it will remove everything from **docs/** and attempt to render all the files. This might overwrite someone else's materials and also break since you won't have their R packages installed. So, only render your files.
 
-- Finally commit changes (both source files and rendered files)
+- Finally commit changes (both source qmd files, rendered html files and _freeze)
 
 ```
 git stage .
