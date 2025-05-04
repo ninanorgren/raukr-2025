@@ -1,4 +1,4 @@
-# Raukr 2025 • Workshop Website  [![lychee_badge](https://github.com/nbisweden/raukr-2025/workflows/spellcheck/badge.svg)](https://github.com/nbisweden/raukr-2025/actions?workflow=spellcheck)  
+# Raukr 2025 • Workshop Website  [![lychee_badge](https://github.com/nbisweden/raukr-2025/workflows/linkcheck/badge.svg)](https://github.com/nbisweden/raukr-2025/actions?workflow=linkcheck)  
 **NBIS Summer School • R Beyond the Basics**
 
 ## Environment
