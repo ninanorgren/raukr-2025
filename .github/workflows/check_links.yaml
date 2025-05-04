@@ -9,10 +9,12 @@ jobs:
   check_links:
     runs-on: ubuntu-latest
     env:
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_PAT: ${{ secrets.TOKEN }}
     steps:
       - uses: actions/checkout@v4
 
       - name: Link Checker
         id: lychee
         uses: lycheeverse/lychee-action@v2
+        with:
+          args: "**/*.qmd"
