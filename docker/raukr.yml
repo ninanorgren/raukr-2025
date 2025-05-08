@@ -1,0 +1,17 @@
+name: raukr
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - r-base=4.4
+  - r-essentials 
+  - quarto 
+  - freetype 
+  - libpng 
+  - libxml2 
+  - pkg-config 
+  - zlib 
+  - xz 
+  - bioconda::htslib
+  - r-tidyverse
