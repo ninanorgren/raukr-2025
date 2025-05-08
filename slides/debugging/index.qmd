@@ -11,7 +11,7 @@ format: revealjs
 library(tictoc)
 library(DT)
 library(profvis)
-# library(Rgraphviz)
+library(Rgraphviz)
 library(proftools) # depends on "graph" and "Rgraphviz" packages
 library(profr)
 library(pryr)
