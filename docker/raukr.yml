@@ -7,12 +7,14 @@ dependencies:
   - r-base=4.4
   - r-essentials
   - r-svglite
-  - quarto 
-  - freetype 
-  - libpng 
-  - libxml2 
-  - pkg-config 
-  - zlib 
-  - xz 
+  - bioconductor-rgraphviz
+  - quarto
+  - freetype
+  - gdal
+  - libpng
+  - libxml2
+  - pkg-config
+  - zlib
+  - xz
   - bioconda::htslib
   - r-tidyverse
