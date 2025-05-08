@@ -8,13 +8,13 @@ Below are instructions on building and using the docker image.
 
 ```bash
 # build the container
-docker build --platform=linux/amd64 -t ghcr.io/nbisweden/workshop-raukr:1.5 --file docker/dockerfile docker/
+docker build --platform=linux/amd64 -t ghcr.io/nbisweden/workshop-raukr:1.5.1 --file docker/dockerfile docker/
 
 # add additional tags
-docker tag ghcr.io/nbisweden/workshop-raukr:1.5 ghcr.io/nbisweden/workshop-raukr:latest
+docker tag ghcr.io/nbisweden/workshop-raukr:1.5.1 ghcr.io/nbisweden/workshop-raukr:latest
 
 # push to ghcr repo
-docker push ghcr.io/nbisweden/workshop-raukr:1.5
+docker push ghcr.io/nbisweden/workshop-raukr:1.5.1
 docker push ghcr.io/nbisweden/workshop-raukr:latest
 ```
 

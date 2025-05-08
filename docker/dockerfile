@@ -1,7 +1,7 @@
 FROM ghcr.io/rocker-org/geospatial:4.4
 
 LABEL authors="Roy Francis"
-LABEL Description="RaukR Ubuntu environment with R, Rstudio, Conda, Mamba and Quarto"
+LABEL Description="Ubuntu environment with R, Rstudio, Conda, Mamba and Quarto"
 LABEL org.opencontainers.image.authors="roy.francis@nbis.se"
 LABEL org.opencontainers.image.source="https://github.com/nbisweden/raukr-2025"
 
@@ -58,8 +58,6 @@ RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -
 RUN quarto install tinytex \
     && quarto install chromium
 
-# RUN Rscript --verbose -e 'remotes::install_github("posit-dev/r-shinylive", upgrade = "never", verbose = TRUE)'
-
 RUN apt-get -y autoclean \
     && apt-get -y autoremove \
     && rm -rf /var/lib/apt/lists/* \
@@ -69,9 +67,10 @@ RUN apt-get -y autoclean \
     && strip /usr/local/lib/R/site-library/*/libs/*.so \
     ## Fix https://github.com/tschaffter/rstudio/issues/11 \
     && ln -s /usr/local/lib/R/lib/libR.so /lib/x86_64-linux-gnu/libR.so \
-    && mkdir -p /home/rstudio/.cache/shinylive /home/rstudio/.cache/quarto /home/rstudio/.cache/R/pkgcache/pkg /home/rstudio/.cache/quarto/sass \
-    && chmod -R 777 /home/rstudio/.cache
+    && mkdir -p /home/rstudio/.cache/shinylive /home/rstudio/.cache/quarto /home/rstudio/.cache/R/pkgcache/pkg /home/rstudio/.cache/quarto/sass /tmp/quarto_cache_home /tmp/quarto_data_home \
+    && chmod -R 777 /home/rstudio/.cache /tmp/quarto_cache_home /tmp/quarto_data_home
 
 ENV XDG_CACHE_HOME=/tmp/quarto_cache_home
 ENV XDG_DATA_HOME=/tmp/quarto_data_home
+ENV DISABLE_AUTH=true
 WORKDIR /home/rstudio/work
