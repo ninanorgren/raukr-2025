@@ -1,5 +1,23 @@
 [
   {
+    "listing": "/labs/index.html",
+    "items": [
+      "/labs/coding/index.html",
+      "/labs/debugging/index.html",
+      "/labs/scripting/index.html",
+      "/labs/quarto/index.html",
+      "/labs/ml/index.html",
+      "/labs/oop/index.html",
+      "/labs/ggplot/index.html",
+      "/labs/packages/index.html",
+      "/labs/tidyverse/index.html",
+      "/labs/vectorization/index.html",
+      "/labs/shiny/index.html",
+      "/labs/git/index.html",
+      "/labs/reticulate/index.html"
+    ]
+  },
+  {
     "listing": "/slides/index.html",
     "items": [
       "/slides/coding/index.html",
@@ -18,24 +36,6 @@
       "/slides/tidyverse/index.html",
       "/slides/vectorization/index.html",
       "/slides/git/index.html"
-    ]
-  },
-  {
-    "listing": "/labs/index.html",
-    "items": [
-      "/labs/coding/index.html",
-      "/labs/debugging/index.html",
-      "/labs/scripting/index.html",
-      "/labs/quarto/index.html",
-      "/labs/ml/index.html",
-      "/labs/oop/index.html",
-      "/labs/ggplot/index.html",
-      "/labs/packages/index.html",
-      "/labs/tidyverse/index.html",
-      "/labs/vectorization/index.html",
-      "/labs/shiny/index.html",
-      "/labs/git/index.html",
-      "/labs/reticulate/index.html"
     ]
   }
 ]

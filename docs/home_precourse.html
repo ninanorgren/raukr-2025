@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Pictures from previous workshops">
+<meta name="description" content="Preparation and system set-up for the workshop">
 
-<title>RaukR 2025 • Gallery</title>
+<title>RaukR 2025 • Precourse</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -41,9 +75,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -82,14 +115,16 @@ background-size: cover;
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&amp;family=Nunito:ital,wght@0,200..1000;1,200..1000&amp;display=swap" rel="stylesheet">
+<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
 
 
-<meta property="og:title" content="RaukR 2025 • Gallery">
-<meta property="og:description" content="Pictures from previous workshops">
+<meta property="og:title" content="RaukR 2025 • Precourse">
+<meta property="og:description" content="Preparation and system set-up for the workshop">
 <meta property="og:image" content="https://nbisweden.github.io/raukr-2025/assets/images/seo.webp">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
@@ -119,7 +154,7 @@ background-size: cover;
 <span class="menu-text">Registration</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./home_gallery.html" aria-current="page"> 
+    <a class="nav-link" href="./home_gallery.html"> 
 <span class="menu-text">Gallery</span></a>
   </li>  
   <li class="nav-item">
@@ -146,11 +181,11 @@ background-size: cover;
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Gallery</h1>
+      <h1 class="title">Precourse</h1>
             <p class="subtitle lead">RaukR 2025 • R Beyond the Basics</p>
                   <div>
         <div class="description">
-          Pictures from previous workshops
+          Preparation and system set-up for the workshop
         </div>
       </div>
                 </div>
@@ -168,7 +203,26 @@ background-size: cover;
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#location" id="toc-location" class="nav-link active" data-scroll-target="#location"><span class="header-section-number">1</span> Location</a></li>
+  <li><a href="#computer" id="toc-computer" class="nav-link" data-scroll-target="#computer"><span class="header-section-number">2</span> Computer</a></li>
+  <li><a href="#software" id="toc-software" class="nav-link" data-scroll-target="#software"><span class="header-section-number">3</span> Software</a>
+  <ul>
+  <li><a href="#conda" id="toc-conda" class="nav-link" data-scroll-target="#conda"><span class="header-section-number">3.1</span> Conda</a></li>
+  </ul></li>
+  <li><a href="#r-packages" id="toc-r-packages" class="nav-link" data-scroll-target="#r-packages"><span class="header-section-number">4</span> R packages</a>
+  <ul>
+  <li><a href="#manual-installation" id="toc-manual-installation" class="nav-link" data-scroll-target="#manual-installation"><span class="header-section-number">4.1</span> Manual installation</a></li>
+  <li><a href="#using-renv" id="toc-using-renv" class="nav-link" data-scroll-target="#using-renv"><span class="header-section-number">4.2</span> Using renv</a></li>
+  <li><a href="#using-docker-container" id="toc-using-docker-container" class="nav-link" data-scroll-target="#using-docker-container"><span class="header-section-number">4.3</span> Using docker container</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
@@ -177,104 +231,142 @@ background-size: cover;
 
 
 
-<section id="raukr-2024" class="level2">
-<h2 class="anchored" data-anchor-id="raukr-2024">Raukr 2024</h2>
-<p><a href="assets/images/raukr-2024/o.webp" class="lightbox" data-gallery="raukr-2024"><img src="assets/images/raukr-2024/o.webp" class="img-fluid"></a></p>
-<div class="raukr-gallery-parent">
-<div class="raukr-gallery-child">
-<p><a href="assets/images/raukr-2024/a.webp" class="lightbox" data-gallery="raukr-2024"><img src="assets/images/raukr-2024/a.webp" class="img-fluid"></a></p>
+<section id="location" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="location"><span class="header-section-number">1</span> Location</h2>
+<iframe width="100%" height="500px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://use.mazemap.com/embed.html#v=1&amp;campusid=100&amp;zlevel=2&amp;center=18.288745,57.639640&amp;zoom=19.8&amp;sharepoitype=poi&amp;sharepoi=293352&amp;utm_medium=iframe" allow="geolocation" title="Campus Gotland">
+</iframe>
+<p><strong>Campus Gotland</strong><br>
+Uppsala University<br>
+Cramérgatan 3<br>
+621 57 Visby<br>
+Gotland, Sweden</p>
+<p>We will use classrooms B25 and B27 on Floor 2 (on map) throughout the workshop. B26 is also available for breakout sessions or group discussions etc. Lunches will be served in the Cafe next to it on the ground floor.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<div class="raukr-gallery-child">
-<p><a href="assets/images/raukr-2024/b.webp" class="lightbox" data-gallery="raukr-2024"><img src="assets/images/raukr-2024/b.webp" class="img-fluid"></a></p>
-</div>
-<div class="raukr-gallery-child">
-<p><a href="assets/images/raukr-2024/c.webp" class="lightbox" data-gallery="raukr-2024"><img src="assets/images/raukr-2024/c.webp" class="img-fluid"></a></p>
-</div>
-<div class="raukr-gallery-child">
-<p><a href="assets/images/raukr-2024/d.webp" class="lightbox" data-gallery="raukr-2024"><img src="assets/images/raukr-2024/d.webp" class="img-fluid"></a></p>
-</div>
-<div class="raukr-gallery-child">
-<p><a href="assets/images/raukr-2024/e.webp" class="lightbox" data-gallery="raukr-2024"><img src="assets/images/raukr-2024/e.webp" class="img-fluid"></a></p>
-</div>
-<div class="raukr-gallery-child">
-<p><a href="assets/images/raukr-2024/f.webp" class="lightbox" data-gallery="raukr-2024"><img src="assets/images/raukr-2024/f.webp" class="img-fluid"></a></p>
-</div>
-<div class="raukr-gallery-child">
-<p><a href="assets/images/raukr-2024/g.webp" class="lightbox" data-gallery="raukr-2024"><img src="assets/images/raukr-2024/g.webp" class="img-fluid"></a></p>
-</div>
-<div class="raukr-gallery-child">
-<p><a href="assets/images/raukr-2024/h.webp" class="lightbox" data-gallery="raukr-2024"><img src="assets/images/raukr-2024/h.webp" class="img-fluid"></a></p>
-</div>
-<div class="raukr-gallery-child">
-<p><a href="assets/images/raukr-2024/i.webp" class="lightbox" data-gallery="raukr-2024"><img src="assets/images/raukr-2024/i.webp" class="img-fluid"></a></p>
-</div>
-<div class="raukr-gallery-child">
-<p><a href="assets/images/raukr-2024/j.webp" class="lightbox" data-gallery="raukr-2024"><img src="assets/images/raukr-2024/j.webp" class="img-fluid"></a></p>
-</div>
-<div class="raukr-gallery-child">
-<p><a href="assets/images/raukr-2024/k.webp" class="lightbox" data-gallery="raukr-2024"><img src="assets/images/raukr-2024/k.webp" class="img-fluid"></a></p>
-</div>
-<div class="raukr-gallery-child">
-<p><a href="assets/images/raukr-2024/l.webp" class="lightbox" data-gallery="raukr-2024"><img src="assets/images/raukr-2024/l.webp" class="img-fluid"></a></p>
-</div>
-<div class="raukr-gallery-child">
-<p><a href="assets/images/raukr-2024/m.webp" class="lightbox" data-gallery="raukr-2024"><img src="assets/images/raukr-2024/m.webp" class="img-fluid"></a></p>
-</div>
-<div class="raukr-gallery-child">
-<p><a href="assets/images/raukr-2024/n.webp" class="lightbox" data-gallery="raukr-2024"><img src="assets/images/raukr-2024/n.webp" class="img-fluid"></a></p>
+<div class="callout-title-container flex-fill">
+Tip
 </div>
 </div>
-<p><br></p>
+<div class="callout-body-container callout-body">
+<p>If you have an door access card for Uppsala university, take it with you.</p>
+</div>
+</div>
 </section>
-<section id="raukr-2023" class="level2">
-<h2 class="anchored" data-anchor-id="raukr-2023">Raukr 2023</h2>
-<p><a href="assets/images/raukr-2023/s.webp" class="lightbox" data-gallery="raukr-2023"><img src="assets/images/raukr-2023/s.webp" class="img-fluid"></a></p>
-<div class="raukr-gallery-parent">
-<div class="raukr-gallery-child">
-<p><a href="assets/images/raukr-2023/a.webp" class="lightbox" data-gallery="raukr-2023"><img src="assets/images/raukr-2023/a.webp" class="img-fluid"></a></p>
+<section id="computer" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="computer"><span class="header-section-number">2</span> Computer</h2>
+<p>You can use any system you like, but we recommend using a Linux or Mac system. If you are using Windows, we recommend using WSL2 (Windows Subsystem for Linux). This will allow you to run a Linux environment on your Windows machine. It’s good to have about 20GB of free space on your system.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<div class="raukr-gallery-child">
-<p><a href="assets/images/raukr-2023/b.webp" class="lightbox" data-gallery="raukr-2023"><img src="assets/images/raukr-2023/b.webp" class="img-fluid"></a></p>
-</div>
-<div class="raukr-gallery-child">
-<p><a href="assets/images/raukr-2023/c.webp" class="lightbox" data-gallery="raukr-2023"><img src="assets/images/raukr-2023/c.webp" class="img-fluid"></a></p>
-</div>
-<div class="raukr-gallery-child">
-<p><a href="assets/images/raukr-2023/d.webp" class="lightbox" data-gallery="raukr-2023"><img src="assets/images/raukr-2023/d.webp" class="img-fluid"></a></p>
-</div>
-<div class="raukr-gallery-child">
-<p><a href="assets/images/raukr-2023/e.webp" class="lightbox" data-gallery="raukr-2023"><img src="assets/images/raukr-2023/e.webp" class="img-fluid"></a></p>
-</div>
-<div class="raukr-gallery-child">
-<p><a href="assets/images/raukr-2023/i.webp" class="lightbox" data-gallery="raukr-2023"><img src="assets/images/raukr-2023/i.webp" class="img-fluid"></a></p>
-</div>
-<div class="raukr-gallery-child">
-<p><a href="assets/images/raukr-2023/j.webp" class="lightbox" data-gallery="raukr-2023"><img src="assets/images/raukr-2023/j.webp" class="img-fluid"></a></p>
-</div>
-<div class="raukr-gallery-child">
-<p><a href="assets/images/raukr-2023/k.webp" class="lightbox" data-gallery="raukr-2023"><img src="assets/images/raukr-2023/k.webp" class="img-fluid"></a></p>
-</div>
-<div class="raukr-gallery-child">
-<p><a href="assets/images/raukr-2023/m.webp" class="lightbox" data-gallery="raukr-2023"><img src="assets/images/raukr-2023/m.webp" class="img-fluid"></a></p>
-</div>
-<div class="raukr-gallery-child">
-<p><a href="assets/images/raukr-2023/n.webp" class="lightbox" data-gallery="raukr-2023"><img src="assets/images/raukr-2023/n.webp" class="img-fluid"></a></p>
-</div>
-<div class="raukr-gallery-child">
-<p><a href="assets/images/raukr-2023/o.webp" class="lightbox" data-gallery="raukr-2023"><img src="assets/images/raukr-2023/o.webp" class="img-fluid"></a></p>
-</div>
-<div class="raukr-gallery-child">
-<p><a href="assets/images/raukr-2023/p.webp" class="lightbox" data-gallery="raukr-2023"><img src="assets/images/raukr-2023/p.webp" class="img-fluid"></a></p>
-</div>
-<div class="raukr-gallery-child">
-<p><a href="assets/images/raukr-2023/q.webp" class="lightbox" data-gallery="raukr-2023"><img src="assets/images/raukr-2023/q.webp" class="img-fluid"></a></p>
-</div>
-<div class="raukr-gallery-child">
-<p><a href="assets/images/raukr-2023/r.webp" class="lightbox" data-gallery="raukr-2023"><img src="assets/images/raukr-2023/r.webp" class="img-fluid"></a></p>
+<div class="callout-title-container flex-fill">
+Warning
 </div>
 </div>
+<div class="callout-body-container callout-body">
+<p>Make sure you have administrative rights on your system. You will need to install software and packages. Make sure you set-up Eduroam for wifi at your home institution before you leave.</p>
+</div>
+</div>
+</section>
+<section id="software" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="software"><span class="header-section-number">3</span> Software</h2>
+<p>You will need the following list of software tools and a long list of R packages for the Hands-on practical labs.</p>
+<ul>
+<li>R 4.4</li>
+<li>IDE (Latest RStudio, Positron or VS Code)</li>
+<li>Quarto 1.5.57 or newer</li>
+<li>Conda (Miniconda or Miniforge recommended)</li>
+<li>Slack (https://raukr.slack.com/) Invitation will be sent to your email</li>
+<li>Git</li>
+<li>Browser (Chrome, Firefox, Safari etc)</li>
+<li>Docker (Optional)</li>
+</ul>
+<section id="conda" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="conda"><span class="header-section-number">3.1</span> Conda</h3>
+<p>Install Miniconda or Miniforge. Test that it works and then create a new environment and activate it.</p>
+<div class="cell">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Terminal</strong></pre>
+</div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">-n</span> raukr <span class="at">-c</span> conda-forge <span class="at">-c</span> bioconda r-base=4.4 r-tidyverse r-essentials r-svglite quarto freetype libpng libxml2 pkg-config zlib xz bioconda::htslib</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate raukr</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<p>To install packages, either follow the <strong>Manual installation</strong> or the <strong>renv</strong> installation instructions below. If you are using the docker container, you don’t need Conda.</p>
+</section>
+</section>
+<section id="r-packages" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="r-packages"><span class="header-section-number">4</span> R packages</h2>
+<p>You can save valuable time during the labs by setting up the environment and installing the R packages in advance. There are a few different ways to approach this:</p>
+<ul>
+<li>Manual installation</li>
+<li>Using renv</li>
+<li>Using docker container</li>
+</ul>
+<section id="manual-installation" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="manual-installation"><span class="header-section-number">4.1</span> Manual installation</h3>
+<p>You assume full responsibility for setting up your environment. This means you will need to install R, RStudio and R packages on your own. You can have a local installation but we suggest that you work in a Conda environment. Here is the list of R packages you will need to install:</p>
+<p>Install CRAN packages if they are not already installed.</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>pkgs_cran <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">'BiocManager'</span>, <span class="st">'bsplus'</span>, <span class="st">'devtools'</span>, <span class="st">'dplyr'</span>, <span class="st">'DT'</span>, <span class="st">'eulerr'</span>, <span class="st">'fontawesome'</span>, <span class="st">'ggiraph'</span>, <span class="st">'ggplot2'</span>, <span class="st">'ggrepel'</span>, <span class="st">'gitcreds'</span>, <span class="st">'googledrive'</span>, <span class="st">'gt'</span>, <span class="st">'here'</span>, <span class="st">'htmltools'</span>, <span class="st">'hues'</span>, <span class="st">'jsonlite'</span>, <span class="st">'kableExtra'</span>, <span class="st">'keras'</span>, <span class="st">'knitr'</span>, <span class="st">'lubridate'</span>, <span class="st">'magrittr'</span>, <span class="st">'MASS'</span>, <span class="st">'microbenchmark'</span>, <span class="st">'optparse'</span>, <span class="st">'patchwork'</span>, <span class="st">'peakRAM'</span>, <span class="st">'plotly'</span>, <span class="st">'profr'</span>, <span class="st">'proftools'</span>, <span class="st">'profvis'</span>, <span class="st">'pryr'</span>, <span class="st">'purrr'</span>, <span class="st">'R.utils'</span>, <span class="st">'R6'</span>, <span class="st">'readr'</span>, <span class="st">'readxl'</span>, <span class="st">'remotes'</span>, <span class="st">'renv'</span>, <span class="st">'reticulate'</span>, <span class="st">'rlang'</span>, <span class="st">'rmarkdown'</span>, <span class="st">'roxygen2'</span>, <span class="st">'rpart'</span>, <span class="st">'rpart.plot'</span>, <span class="st">'shiny'</span>, <span class="st">'sm'</span>, <span class="st">'spatstat'</span>, <span class="st">'stringr'</span>, <span class="st">'tibble'</span>, <span class="st">'tictoc'</span>, <span class="st">'tidyr'</span>, <span class="st">'tidyverse'</span>, <span class="st">'usethis'</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>( pkg <span class="cf">in</span> pkgs_cran) {</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">requireNamespace</span>(pkg, <span class="at">quietly =</span> <span class="cn">TRUE</span>)) {</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">install.packages</span>(pkg, <span class="at">repos =</span> <span class="st">'https://packagemanager.rstudio.com/all/latest'</span>, <span class="at">verbose =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<p>Install Bioconductor packages.</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>BiocManager<span class="sc">::</span><span class="fu">install</span>(<span class="fu">c</span>(<span class="st">'Rgraphviz'</span>,<span class="st">'RNASeqPower'</span>,<span class="st">'ShortRead'</span>), <span class="at">update =</span> <span class="cn">TRUE</span>, <span class="at">ask =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<p>Install GitHub packages.</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="at">repo =</span> <span class="st">'rstudio/EDAWR'</span>, <span class="at">ref =</span> <span class="st">'fbfee98447826f6b199a482715f3b7dadd311da3'</span>, <span class="at">host =</span> <span class="st">'api.github.com'</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="at">repo =</span> <span class="st">'hadley/emo'</span>, <span class="at">ref =</span> <span class="st">'3f03b11491ce3d6fc5601e210927eff73bf8e350'</span>, <span class="at">host =</span> <span class="st">'api.github.com'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</section>
+<section id="using-renv" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="using-renv"><span class="header-section-number">4.2</span> Using renv</h3>
+<p>You can use the <code>renv</code> package to create a reproducible environment for your project. This will allow you to install all the required packages in a single command. First download the renv lockfile.</p>
+<p><a class="btn btn-primary btn-sm" href="https://raw.githubusercontent.com/NBISweden/raukr-2025/refs/heads/main/docker/renv.lock" role="button" target="_blank"><i class="fa-solid fa-download" aria-label="download"></i> renv.lock</a></p>
+<p>Install the <strong>renv</strong> R package and use it to restore the environment.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">'renv'</span>, <span class="at">repos =</span> <span class="st">'https://packagemanager.rstudio.com/all/latest'</span>, <span class="at">verbose =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>renv<span class="sc">::</span><span class="fu">restore</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="using-docker-container" class="level3" data-number="4.3">
+<h3 data-number="4.3" class="anchored" data-anchor-id="using-docker-container"><span class="header-section-number">4.3</span> Using docker container</h3>
+<p>We provide a docker container with all the required packages pre-installed. This is the easiest way to set up your environment, as you don’t need an R or RStudio installation on your local machine. But you will need to have docker installed.</p>
+<p>Run the following command in the terminal.</p>
+<div class="cell">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Terminal</strong></pre>
+</div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">--platform</span><span class="op">=</span>linux/amd64 <span class="at">-e</span> PASSWORD=raukr <span class="at">-p</span> 8787:8787 <span class="at">-p</span> 4200:4200 <span class="at">-v</span> <span class="va">${PWD}</span>:/home/rstudio/work ghcr.io/nbisweden/workshop-raukr:latest</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<p>In the browser, go to <a href="http://localhost:8787/">http://localhost:8787/</a>. Use following credentials:</p>
+<blockquote class="blockquote">
+<p>username: rstudio<br>
+password: raukr</p>
+</blockquote>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -713,38 +805,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","openEffect":"zoom","closeEffect":"zoom","loop":false,"descPosition":"bottom"});
-(function() {
-  let previousOnload = window.onload;
-  window.onload = () => {
-    if (previousOnload) {
-      previousOnload();
-    }
-    lightboxQuarto.on('slide_before_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      const href = trigger.getAttribute('href');
-      if (href !== null) {
-        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-        if (imgEl !== null) {
-          const srcAttr = imgEl.getAttribute("src");
-          if (srcAttr && srcAttr.startsWith("data:")) {
-            slideConfig.href = srcAttr;
-          }
-        }
-      } 
-    });
-  
-    lightboxQuarto.on('slide_after_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(slideNode);
-      }
-    });
-  
-  };
-  
-})();
-          </script>
 
 
 

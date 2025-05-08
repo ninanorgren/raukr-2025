@@ -551,13 +551,13 @@
 </div>
 </div>
 <div class="cell-output cell-output-stdout">
-<pre><code>       V1                  V2          
- Min.   :-2.008752   Min.   :-1.47878  
- 1st Qu.:-0.799130   1st Qu.:-0.49412  
- Median : 0.106002   Median :-0.12176  
- Mean   :-0.004081   Mean   : 0.09116  
- 3rd Qu.: 0.709460   3rd Qu.: 0.72990  
- Max.   : 1.839160   Max.   : 2.19752  </code></pre>
+<pre><code>       V1                V2         
+ Min.   :-1.6689   Min.   :-1.9762  
+ 1st Qu.:-0.8747   1st Qu.:-0.4422  
+ Median :-0.3309   Median : 0.1166  
+ Mean   :-0.2187   Mean   : 0.1088  
+ 3rd Qu.: 0.3061   3rd Qu.: 0.8383  
+ Max.   : 1.6378   Max.   : 1.7700  </code></pre>
 </div>
 </div>
 </div></div>
@@ -586,12 +586,12 @@
 </section>
 <section id="other-types-of-magrittr-pipes-1" class="slide level2">
 <h2>Other Types of <code>magrittr</code> Pipes — %&lt;&gt;%</h2>
-<p>It exists but can lead to somewhat confusing code! ☠️</p>
+<p>It exists but can lead to somewhat confusing code! ⚡</p>
 <p><code>x %&lt;&gt;% f</code> <span class="math inline">\(\equiv\)</span> <code>x &lt;- f(x)</code></p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a>M <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">rnorm</span>(<span class="dv">16</span>), <span class="at">nrow=</span><span class="dv">4</span>); M <span class="sc">%&lt;&gt;%</span> <span class="fu">colSums</span>(); M</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] -2.85201524 -1.58260671  0.06945756  2.16722185</code></pre>
+<pre><code>[1] -2.8824547  1.3841998 -0.2237575  1.1810769</code></pre>
 </div>
 </div>
 </section>
@@ -633,9 +633,9 @@ Coefficients:
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a></a>M <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">4</span>) <span class="sc">%&gt;%</span> <span class="fu">matrix</span>(<span class="at">nrow =</span> <span class="dv">2</span>)</span>
 <span id="cb18-2"><a></a>M <span class="sc">%&gt;%</span> <span class="st">`</span><span class="at">%*%</span><span class="st">`</span>(., .)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>          [,1]         [,2]
-[1,] 1.7047887 -0.474268404
-[2,] 0.5537214 -0.002522708</code></pre>
+<pre><code>            [,1]       [,2]
+[1,]  0.04290745 -0.4595287
+[2,] -0.08683666  1.0454734</code></pre>
 </div>
 </div>
 </div>
@@ -736,16 +736,16 @@ Use 'functions' to extract the individual functions. </code></pre>
 <pre><code># A tibble: 50 × 4
        x      y     z outcome
    &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt;
- 1     1 0.601   1.36  1.70  
- 2     1 0.409   1.17  0.236 
- 3     1 0.228   1.05 -1.05  
- 4     1 0.901   1.81 -0.145 
- 5     1 0.0391  1.00 -0.642 
- 6     1 0.544   1.30 -1.15  
- 7     1 0.941   1.89  1.01  
- 8     1 1.00    2.00 -0.0879
- 9     1 0.127   1.02 -0.151 
-10     1 0.599   1.36  0.0156
+ 1     1 0.933   1.87   0.736
+ 2     1 0.176   1.03   0.427
+ 3     1 0.380   1.14  -2.05 
+ 4     1 0.426   1.18   0.673
+ 5     1 0.104   1.01  -0.673
+ 6     1 0.274   1.08  -0.142
+ 7     1 0.955   1.91   2.03 
+ 8     1 0.103   1.01  -1.19 
+ 9     1 0.846   1.72  -0.233
+10     1 0.0446  1.00  -0.786
 # ℹ 40 more rows</code></pre>
 </div>
 </div>
@@ -1053,7 +1053,7 @@ Levels: mountains swamps seaside</code></pre>
 <p><strong>Caution</strong></p>
 </div>
 <div class="callout-content">
-<p>🚤 Be careful with floating point comparisons!<br>
+<p>🛥 Be careful with floating point comparisons!<br>
 🏴‍☠️ Also, rows with comparison resulting in <code>NA</code> are skipped by default!</p>
 </div>
 </div>
@@ -1508,11 +1508,11 @@ Levels: mountains swamps seaside</code></pre>
 <pre><code># A tibble: 5 × 3
   cut     `2008` `2009`
   &lt;ord&gt;    &lt;int&gt;  &lt;dbl&gt;
-1 Ideal      326    329
-2 Premium    326    329
-3 Good       327    330
-4 Premium    334    337
-5 Good       335    338</code></pre>
+1 Ideal      326    327
+2 Premium    326    327
+3 Good       327    328
+4 Premium    334    335
+5 Good       335    336</code></pre>
 </div>
 </div>
 </div><div class="column" style="width:50%;">
@@ -1525,9 +1525,9 @@ Levels: mountains swamps seaside</code></pre>
   cut     year  price
   &lt;ord&gt;   &lt;chr&gt; &lt;dbl&gt;
 1 Ideal   2008    326
-2 Ideal   2009    329
+2 Ideal   2009    327
 3 Premium 2008    326
-4 Premium 2009    329
+4 Premium 2009    327
 5 Good    2008    327</code></pre>
 </div>
 </div>
@@ -1666,8 +1666,8 @@ Levels: mountains swamps seaside</code></pre>
   &lt;ord&gt;     &lt;chr&gt;     &lt;ord&gt;   &lt;int&gt;
 1 Fair      Aus       &lt;NA&gt;       NA
 2 Fair      Eur       &lt;NA&gt;       NA
-3 Good      Aus       SI2       335
-4 Good      Eur       VS1       327
+3 Good      Aus       VS1       327
+4 Good      Eur       SI2       335
 5 Very Good Aus       VVS2      336
 6 Very Good Eur       &lt;NA&gt;       NA
 7 Premium   Aus       &lt;NA&gt;       NA</code></pre>
