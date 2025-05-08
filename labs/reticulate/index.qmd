@@ -21,7 +21,7 @@ These are exercises for practicing to use the `reticulate` package in R. Try to 
 
 Please download the following file and unzip the contents before the lab.
 
-<a class="btn btn-secondary btn-sm" href="https://www.dropbox.com/scl/fi/iokpz1q7hf43hubo1vsuz/raukr-reticulate.zip?dl=1&rlkey=lvqzox1ueghbpt5emwcuime1u" role="button">{{< fa download >}} raukr-reticulate.zip</a>
+<a class="btn btn-primary btn-sm" href="https://www.dropbox.com/scl/fi/iokpz1q7hf43hubo1vsuz/raukr-reticulate.zip?dl=1&rlkey=lvqzox1ueghbpt5emwcuime1u" role="button">{{< fa download >}} raukr-reticulate.zip</a>
 
 :::
 
