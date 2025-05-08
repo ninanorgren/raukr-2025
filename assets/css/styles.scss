@@ -144,6 +144,11 @@ code {
   color: $code-color;
 }
 
+.cell-output-stdout code {
+  word-break: break-word !important;
+  white-space: pre-wrap !important;
+}
+      
 /* call-out */
 
 .callout {
@@ -296,4 +301,8 @@ div.callout-important .callout-icon::before {
 .toastui-calendar-popup-section > .toastui-calendar-detail-item:nth-child(1),
 .toastui-calendar-popup-section > .toastui-calendar-detail-item:nth-child(2) {
   display: none;
+}
+
+.toastui-calendar-template-time {
+  white-space: pre-wrap;  
 }
