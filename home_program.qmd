@@ -67,7 +67,7 @@ We will be covering a number of topics in R programming with focus on R features
 
 ## Course materials
 
-Course materials will be made available at the beginning of the workshop and will remain open and publicly accessible online for at least a year. You can check out the materials from [2024](https://nbisweden.github.io/raukr-2024/contents.html).
+Course materials will be made available at the beginning of the workshop and will remain open and publicly accessible online for at least a year. You can check out the materials from [2024](https://nbisweden.github.io/raukr-2024/home_contents.html).
 
 ## Sessions
 

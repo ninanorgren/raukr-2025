@@ -143,7 +143,7 @@ For a complete guide to YAML metadata for HTML, see [here](https://quarto.org/do
 
 ### Markdown text
 
-Markdown is a markup language similar to HTML, but simple and human-readable. There exists several variants of markdown with slight differences. Quarto uses [Pandoc flavored markdown](https://pandoc.org/MANUAL#pandocs-markdown).
+Markdown is a markup language similar to HTML, but simple and human-readable. There exists several variants of markdown with slight differences. Quarto uses [Pandoc flavored markdown](https://pandoc.org/MANUAL.html#pandocs-markdown).
 
 Headings are specified as such:
 

@@ -610,7 +610,7 @@ loadfonts()
 fonts()
 ```
 
-The actual font used on the Economist graph is something close to [ITC Officina Sans](https://www.fontshop.com/families/itc-itc-officina-sans). Since this is not a free font, I am using a free font called [Gidole](https://gidole.github.io/).
+The actual font used on the Economist graph is something close to [ITC Officina Sans](https://www.myfonts.com/collections/officina-sans-font-itc). Since this is not a free font, I am using a free font called [Gidole](https://gidole.github.io/).
 
 ```{r}
 #| fig-height: 5

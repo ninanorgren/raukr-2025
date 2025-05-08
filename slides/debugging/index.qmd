@@ -635,14 +635,14 @@ We should forget about small efficiencies, say about 97% of the time: premature 
 ::: {.column width="50%"}
 
 ![](assets/xkcd_automation.png){height="350px"}  
-[source: http://www.xkcd/com/1319]{.smaller}
+[source: https://xkcd.com/1319]{.smaller}
 
 :::
 
 ::: {.column width="50%"}
 
 ![](assets/xkcd_is_it_worth_the_time_2x.png){height="350px"}  
-[source: http://www.xkcd/com/1205]{.smaller}
+[source: https://xkcd.com/1205/]{.smaller}
 
 :::
 ::::

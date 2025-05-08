@@ -342,7 +342,7 @@ my_awesome_plot(1:5, las = 1)
 [
 ![](assets/goto.png){height="300px"}
 <br>
-[source: http://www.xkcd/com/292]{.smaller}
+[source: https://xkcd.com/292/]{.smaller}
 ]{.center}
 
 ## Github copilot `r emo::ji('heart')` RStudio

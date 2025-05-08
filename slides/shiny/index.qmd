@@ -1254,7 +1254,7 @@ shinyApp(
 
 ## Debugging & Optimizing
 
-- Assess compute and RAM usage using [**profvis**](https://rstudio.github.io/profvis/index.html)
+- Assess compute and RAM usage using [**profvis**](https://profvis.r-lib.org/)
 
   ![](assets/profvis.webp){width="60%"}
 

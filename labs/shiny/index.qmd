@@ -509,7 +509,7 @@ shinyApp(
 
 ## Shinylive
 
-[Shinylive](https://shiny.posit.co/py/docs/shinylive.html) is a framework that allows shiny applications to run in the browser without a server. This is made possible by the recent development of [WebR](https://docs.r-wasm.org/webr/). [This video](https://www.youtube.com/watch?v=j1M6YyU2ZX8) is a great introduction to the topic. Examples of shinylive apps can be seen [here](https://shinylive.io/r/examples/).
+[Shinylive](https://shinylive.io) is a framework that allows shiny applications to run in the browser without a server. This is made possible by the recent development of [WebR](https://docs.r-wasm.org/webr/). [This video](https://www.youtube.com/watch?v=j1M6YyU2ZX8) is a great introduction to the topic. Examples of shinylive apps can be seen [here](https://shinylive.io/r/examples/).
 
 Shinylive can be used in three ways: 
 
@@ -738,7 +738,7 @@ Refer to the shinylive extension [documentation](https://quarto-ext.github.io/sh
 
 ## ggplot2 builder
 
-In the ggplot2 presentation, we had a [few slides](https://nbisweden.github.io/raukr-2023/docs/slides/ggplot/index.html#/theme-text) with theme customisation. We will try to recreate that as a shiny app, so we can interactively customise a plot.
+In the ggplot2 presentation, we had a few slides with theme customisation. We will try to recreate that as a shiny app, so we can interactively customise a plot.
 
 **Topics covered**
 
