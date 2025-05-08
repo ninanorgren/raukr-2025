@@ -1,0 +1,13 @@
+# This file is used to configure the Quarto project such that only files 
+# relevant for students is run
+project:
+  render: 
+    - "*.qmd"
+    - "*.md"
+    - "!slides/quarto/sample/*.qmd"
+    - "!home_env.qmd"
+    - "!home_precourse.qmd"
+    - "!slides/demo/*.qmd"
+    - "!home_registration.qmd"
+    - "!home_schedule.qmd"
+    - "!labs/demo/*.qmd"
