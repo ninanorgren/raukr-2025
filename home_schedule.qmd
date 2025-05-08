@@ -15,12 +15,9 @@ format:
 # <iframe width="100%" height="100%" src="https://docs.google.com/spreadsheets/d/e/https://docs.google.com/spreadsheets/d/1368orWmfx6Yw-1pS4u-QAhg7nHFRjFXuB5s-5LOhVN4/edit?usp=sharing/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 ```
 
-::: {.schedule}
-
 ```{r}
 #| eval: true
 #| echo: false
-#| fig-height: 6
 
 library(googlesheets4)
 library(lubridate)
@@ -61,6 +58,15 @@ colors <- data.frame(
   borderColor=c("#f7dc6f","#7dcea0","#f0b27a","#bb8fce","#85c1e9")
 )
 rownames(colors) <- colors$id
+```
+
+
+::: {.schedule}
+
+```{r}
+#| eval: true
+#| echo: false
+#| fig-height: 6
 
 calendar(dfr, view="week", navigation=TRUE, defaultDate=as.Date("2025-06-9"), height=790) %>%
     cal_week_options(startDayOfWeek = 1, hourStart=8, hourEnd=21, eventView="time", showNowIndicator = TRUE) %>%

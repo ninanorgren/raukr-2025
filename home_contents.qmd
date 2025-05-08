@@ -16,31 +16,31 @@ execute:
 
 |Topic                                  |Presenter                              |Links|
 |---------------------------------------|---------------------------------------|-----|
-|[WEEK 1]{.badge .badge-secondary}                                          |||
+|[WEEK 1]{.badge .badge-primary}                                          |||
 |[09-Jun-2025 (Mon)]{.badge .badge-secondary}                               |||
 |Introduction to RaukR                  |Marcin Kierczak, Sebastian DiLorenzo   ||
 |Best Coding Practices in R             |Marcin Kierczak, Sebastian DiLorenzo   |[Slides](slides/coding/index.html), [Lab](labs/coding/index.html)|
+|Project environments using Renv        |Roy Francis                            |[Slides](slides/r-env/index.html)|
 |Literate programming with Quarto       |Roy Francis                            |[Slides](slides/quarto/index.html), [Lab](labs/quarto/index.html)|
-|Debugging, Profiling and Optimization  |Marcin Kierczak                        |[Slides](slides/debugging/index.html), [Lab](labs/debugging/index.html)|
 |[10-Jun-2025 (Tue)]{.badge .badge-secondary}                               |||
-|Object-oriented programming            |Marcin Kierczak                        |[Slides](slides/oop/index.html), [Lab](labs/oop/index.html)|
-|git with R                             |Sebastian DiLorenzo                    |[Slides](slides/git/index.html), [Lab](labs/git/index.html)|
-|Plotting with ggplot2                  |Roy Francis                            |[Slides](slides/ggplot/index.html), [Lab](labs/ggplot/index.html)|
+|Debugging, Profiling and Optimization  |Marcin Kierczak                        |[Slides](slides/debugging/index.html), [Lab](labs/debugging/index.html)|
 |[11-Jun-2025 (Wed)]{.badge .badge-secondary}                               |||
-|Tidyverse                              |Marcin Kierczak                        |[Slides](slides/tidyverse/index.html), [Lab](labs/tidyverse/index.html)|
-|Futurverse 1                           |Henrik Bengtsson, UCSF                 |[Web](https://henrikbengtsson.github.io/future-tutorial-raukr2024/lab1.html)|
+|git with R                             |Sebastian DiLorenzo                    |[Slides](slides/git/index.html), [Lab](labs/git/index.html)|
+|Futurverse                             |Henrik Bengtsson, UCSF                 ||
 |[12-Jun-2025 (Thu)]{.badge .badge-secondary}                               |||
-|How to repeat yourself with Purrr      |Jenny Bryan, Posit                     |[Repo](https://github.com/jennybc/2024_raukr-purrr-pkg-dev)|
-|Web apps with Shiny                    |Roy Francis                            |[Slides](slides/shiny/index.html), [Lab](labs/shiny/index.html)|
+|Tidyverse                              |Marcin Kierczak                        |[Slides](slides/tidyverse/index.html), [Lab](labs/tidyverse/index.html)|
+|Plotting with ggplot2                  |Roy Francis                            |[Slides](slides/ggplot/index.html), [Lab](labs/ggplot/index.html)|
 |[13-Jun-2025 (Fri)]{.badge .badge-secondary}                               |||
-|R Packages                             |Jenny Bryan, Posit                     |[Repo](https://github.com/jennybc/2024_raukr-purrr-pkg-dev)|
+|R Packages                             |Jenny Bryan, Posit                     ||
 |reticulate: Combining R with Python    |Nina Norgren                           |[Slides](slides/reticulate/index.html), [Lab](labs/reticulate/index.html)|
-|[WEEK 2]{.badge .badge-secondary}                                          |||
+|[WEEK 2]{.badge .badge-primary}                                          |||
 |[16-Jun-2025 (Mon)]{.badge .badge-secondary}                               |||
 |Statistics and machine learning in R   |Nikolay Oskolkov                       |[Slides](slides/ml/index.html), [Lab](labs/ml/index.html)|
-|Futurverse 2                           |Henrik Bengtsson, UCSF                 |[Web](https://henrikbengtsson.github.io/future-tutorial-raukr2024/lab1.html)|
 |[17-Jun-2025 (Tue)]{.badge .badge-secondary}                               |||
-|Project environments using Renv        |Roy Francis                            |[Slides](slides/r-env/index.html)|
+|Object-oriented programming            |Marcin Kierczak                        |[Slides](slides/oop/index.html), [Lab](labs/oop/index.html)|
+|Web apps with Shiny                    |Roy Francis                            |[Slides](slides/shiny/index.html), [Lab](labs/shiny/index.html)|
 :::
 
-[[Slides]{.btn .btn-sm .btn-secondary}](slides/index.html) [[Labs]{.btn .btn-sm .btn-secondary}](labs/index.html) 
+<br>
+
+[[Slides]{.btn .btn-sm .btn-primary}](slides/index.html) [[Labs]{.btn .btn-sm .btn-primary}](labs/index.html) 
